@@ -1,0 +1,23 @@
+zone_id,zone_name,country,matchup
+FI,Finland,Finland,Norther Europe
+SE,Sweden,Sweden,Norther Europe
+NO-NO1,Norway-1,Norway,Norther Europe
+NO-NO2,Norway-2,Norway,Norther Europe
+NO-NO3,Norway-3,Norway,Norther Europe
+NO-NO4,Norway-4,Norway,Norther Europe
+NO-NO5,Norway-5,Norway,Norther Europe
+DK-DK1,Danemark-1,Danemark,Norther Europe
+DK-DK2,Danemark-2,Danemark,Norther Europe
+FR,France,France,Central Europe
+DE,Germany,Germany,Central Europe
+GB,UK,UK,Central Europe
+GR,Greece,Greece,Southern Europe
+HU,Hungary,Hungary,Central Europe
+PT,Portugal,Portugal,Southern Europe
+ES,Spain,Spain,Southern Europe
+IT-CNO,Italy-Central-North,Italy,Southern Europe
+IT-CSO,Italy-Central-South,Italy,Southern Europe
+IT-NO,Italy-North,Italy,Southern Europe
+IT-SAR,Italy-Sardinia,Italy,Southern Europe
+IT-SIC,Italy-Sicily,Italy,Southern Europe
+IT-SO,Italy-South,Italy,Southern Europe

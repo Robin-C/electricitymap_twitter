@@ -1,0 +1,31 @@
+version: '3.1'
+services:
+  bot:
+    image: python:3.8-slim
+    environment:
+      - AUTH_ELECTRICITYMAP=${AUTH_ELECTRICITYMAP}
+    volumes:
+      - ./:/app
+    command: tail -f /dev/null
+
+  postgres:
+    image: postgres:13
+    restart: always
+    user: postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    hostname: postgres
+    volumes:
+      - ./postgre-data:/var/lib/postgresql/data:rw
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - 5050:80
+    volumes:
+      - ./pgadmin-data:/var/lib/pgadmin
