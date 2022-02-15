@@ -4,6 +4,9 @@ services:
     image: python:3.8-slim
     environment:
       - AUTH_ELECTRICITYMAP=${AUTH_ELECTRICITYMAP}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - ./:/app
     command: tail -f /dev/null

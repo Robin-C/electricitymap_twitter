@@ -12,7 +12,7 @@ with open('zones.csv', 'r') as f:
     next(reader) # Skip the header row.
     for row in reader:
         cur.execute(
-        "INSERT INTO zone (zone_id,zone_name,country,matchup) VALUES (%s, %s, %s, %s)",
+        "INSERT INTO zone (zone_id,zone_name,country,division) VALUES (%s, %s, %s, %s)",
         row
     )
 conn.commit()
