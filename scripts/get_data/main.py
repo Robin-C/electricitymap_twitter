@@ -27,17 +27,21 @@ client = tweepy.Client(
 
 def get_matchups(divisions = 'all'):
   # We query the divisions
+  print('----')
+  print(f'toutes divisions: {divisions}')
+  print('----')  
   if divisions == 'all':
-    query = cur.execute('select division from public.zone group by 1')
+    cur.execute('select division from public.zone group by 1')
     divisions = cur.fetchall()
-
+    divisions = list(itertools.chain.from_iterable(divisions))
+  
   for division in divisions:
-    division = division[0]
+    division
     cur.execute('select country from public.zone where division = %s group by 1', (division,))
     countries = cur.fetchall()
     countries = list(itertools.chain.from_iterable(countries))
-    print(division)
-    print(countries)
+    print(f'division : {division}')
+    print(f'countries: {countries}')
     print(len(countries))
     runners = len(countries)
     winners = random.sample(range(0, runners), 2)
@@ -47,7 +51,7 @@ def get_matchups(divisions = 'all'):
 
 def get_zones(country):
    # First we get the zones for each country
-   query = cur.execute("select zone_id from public.zone where country = %s ", (country,))
+   cur.execute("select zone_id from public.zone where country = %s ", (country,))
    zones_country = cur.fetchall()
    zones_country = list(itertools.chain.from_iterable(zones_country))
    return zones_country
@@ -152,9 +156,9 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
     'Italy': '\U0001F1EE\U0001F1F9',
     'Denmark': '\U0001F1E9\U0001F1F0',
     'Hungary': '\U0001F1ED\U0001F1FA',
-    'co2_good': '\U0001F604	',
-    'co2_middle': '\U0001F912',
-    'co2_bad': '\U0001F92E'
+    'co2_good': '\U0001F7E2',
+    'co2_middle': '\U0001F7E0',
+    'co2_bad': '\U0001F534'
   }
   co2_country1_emoji = ''
   co2_country2_emoji = ''
@@ -173,9 +177,10 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
 
   country1_emoji = emoji_list[country1]
   country2_emoji = emoji_list[country2]
-  client.create_tweet(text=f"""{country1.upper()} {country1_emoji} {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][0].upper()} ({mix_country1[0][1]}mwh / {mix_country1[0][2]}%), {mix_country1[1][0].upper()} ({mix_country1[1][1]}mwh / {mix_country1[1][2]}%), {mix_country1[2][0].upper()} ({mix_country1[2][1]}mwh / {mix_country1[2][2]}%)
+  client.create_tweet(text=f"""{country1_emoji} {country1.upper()}: {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][0].upper()} {mix_country1[0][2]}%, {mix_country1[1][0].upper()} {mix_country1[1][2]}% and {mix_country1[2][0].upper()} {mix_country1[2][2]}%
   
-{country2.upper()} {country2_emoji} {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][0].upper()} ({mix_country2[0][1]}mwh / {mix_country2[0][2]}%), {mix_country2[1][0].upper()} ({mix_country2[1][1]}mwh / {mix_country2[1][2]}%), {mix_country2[2][0].upper()} ({mix_country2[2][1]}mwh / {mix_country2[2][2]}%)""")
+{country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][0].upper()} {mix_country2[0][2]}%, {mix_country2[1][0].upper()} {mix_country2[1][2]}% and {mix_country2[2][0].upper()} {mix_country2[2][2]}%""")
+
 def get_data(division, country1, country2):
   co2_country1 = get_co2(country1, division)
   co2_country2 = get_co2(country2, division)
