@@ -1,4 +1,4 @@
-import requests, os, psycopg2, psycopg2.extras, random, itertools, collections, datetime
+import requests, os, psycopg2, psycopg2.extras, random, itertools, collections, datetime, tweepy
 
 electricitymap_token = os.getenv('AUTH_ELECTRICITYMAP')
 
@@ -12,13 +12,18 @@ cur = conn.cursor()
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
 
-# query = cur.execute('select zone_id from public.zone')
-# zones = cur.fetchall()
+# Twitter set up
+access_token_secret = os.getenv('TWEETER_ACCESS_TOKEN_SECRET')
+access_token = os.getenv('TWEETER_ACCESS_TOKEN')
+consumer_key = os.getenv('TWEETER_CONSUMMER_KEY')
+consumer_secret = os.getenv('TWEETER_CONSUMMER_SECRET')
 
-# First we decide on matchups
-# Every tweet opposes 2 countries. Countries are split in division (northern europe, southern europe, central europe). A country can only fight against a country of the same division.
-matchup = []
-zone_ids = []
+client = tweepy.Client(
+    consumer_key=consumer_key,
+    consumer_secret=consumer_secret,
+    access_token=access_token,
+    access_token_secret=access_token_secret
+)
 
 def get_matchups(divisions = 'all'):
   # We query the divisions
@@ -124,7 +129,7 @@ def get_mix(country, division):
         if keys == 'battery discharge':
           mix['battery_discharge'] += production.get(keys) if production.get(keys) is not None else 0    
 
-  # We get the top 3 energy source for the country
+  # We get the top 3 energy sources for the country
   tups = collections.Counter(mix).most_common(4)
   top3 = []
   for tuple in tups:
@@ -133,6 +138,44 @@ def get_mix(country, division):
 
   return top3
 
+def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_country2):
+  emoji_list = {
+    'Sweden': '\U0001F1F8\U0001F1EA',
+    'Portugal': '\U0001F1F5\U0001F1F9',
+    'Germany': '\U0001F1E9\U0001F1EA',
+    'Greece': '\U0001F1EC\U0001F1F7',
+    'Norway': '\U0001F1F3\U0001F1F4',
+    'Finland': '\U0001F1EB\U0001F1EE',
+    'France': '\U0001F1EB\U0001F1F7',
+    'UK': '\U0001F1EC\U0001F1E7',
+    'Spain': '\U0001F1EA\U0001F1F8',
+    'Italy': '\U0001F1EE\U0001F1F9',
+    'Denmark': '\U0001F1E9\U0001F1F0',
+    'Hungary': '\U0001F1ED\U0001F1FA',
+    'co2_good': '\U0001F604	',
+    'co2_middle': '\U0001F912',
+    'co2_bad': '\U0001F92E'
+  }
+  co2_country1_emoji = ''
+  co2_country2_emoji = ''
+  if 0 <= co2_country1 < 100:
+    co2_country1_emoji = emoji_list['co2_good']
+  if 100 <= co2_country1 < 200:  
+    co2_country1_emoji = emoji_list['co2_middle']
+  if 200 <= co2_country1 <= 10000:  
+    co2_country1_emoji = emoji_list['co2_bad']    
+  if 0 <= co2_country2 < 100:
+    co2_country2_emoji = emoji_list['co2_good']
+  if 100 <= co2_country2 < 200:  
+    co2_country2_emoji = emoji_list['co2_middle']
+  if 200 <= co2_country2 <= 10000:  
+    co2_country2_emoji = emoji_list['co2_bad']        
+
+  country1_emoji = emoji_list[country1]
+  country2_emoji = emoji_list[country2]
+  client.create_tweet(text=f"""{country1.upper()} {country1_emoji} {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][0].upper()} ({mix_country1[0][1]}mwh / {mix_country1[0][2]}%), {mix_country1[1][0].upper()} ({mix_country1[1][1]}mwh / {mix_country1[1][2]}%), {mix_country1[2][0].upper()} ({mix_country1[2][1]}mwh / {mix_country1[2][2]}%)
+  
+{country2.upper()} {country2_emoji} {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][0].upper()} ({mix_country2[0][1]}mwh / {mix_country2[0][2]}%), {mix_country2[1][0].upper()} ({mix_country2[1][1]}mwh / {mix_country2[1][2]}%), {mix_country2[2][0].upper()} ({mix_country2[2][1]}mwh / {mix_country2[2][2]}%)""")
 def get_data(division, country1, country2):
   co2_country1 = get_co2(country1, division)
   co2_country2 = get_co2(country2, division)
@@ -171,6 +214,8 @@ def get_data(division, country1, country2):
             )
     conn.commit()
     # We generate tweet
+    # \U0001F600
+    send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_country2)
 
 
 get_matchups()
