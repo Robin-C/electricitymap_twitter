@@ -1,4 +1,4 @@
-import requests, os, psycopg2, psycopg2.extras, random, itertools, collections, datetime, tweepy
+import requests, os, psycopg2, psycopg2.extras, random, itertools, collections, pytz, datetime, tweepy, numpy as np
 
 electricitymap_token = os.getenv('AUTH_ELECTRICITYMAP')
 
@@ -27,26 +27,19 @@ client = tweepy.Client(
 
 def get_matchups(divisions = 'all'):
   # We query the divisions
-  print('----')
-  print(f'toutes divisions: {divisions}')
-  print('----')  
   if divisions == 'all':
     cur.execute('select division from public.zone group by 1')
     divisions = cur.fetchall()
     divisions = list(itertools.chain.from_iterable(divisions))
   
   for division in divisions:
-    division
-    cur.execute('select country from public.zone where division = %s group by 1', (division,))
-    countries = cur.fetchall()
-    countries = list(itertools.chain.from_iterable(countries))
-    print(f'division : {division}')
-    print(f'countries: {countries}')
-    print(len(countries))
-    runners = len(countries)
-    winners = random.sample(range(0, runners), 2)
-    country1 = countries[winners[0]]
-    country2 = countries[winners[1]]
+    cur.execute('select country, probability from public.zone where division = %s group by 1, 2', (division,))
+    query = cur.fetchall()
+    country_list = [country[0] for country in query]
+    probability_list = [round(float(country[1]), 3) for country in query]
+    choices = np.random.choice(country_list, size=2, replace=False, p=probability_list)
+    country1 = choices[0]
+    country2 = choices[1]
     get_data(division, country1, country2)
 
 def get_zones(country):
@@ -177,9 +170,14 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
 
   country1_emoji = emoji_list[country1]
   country2_emoji = emoji_list[country2]
+  tz = pytz.timezone('Europe/Berlin')
+  timestamp_berlin = datetime.datetime.now(tz).strftime("%d/%m/%y %H:%M")
   client.create_tweet(text=f"""{country1_emoji} {country1.upper()}: {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][2]}% {mix_country1[0][0].capitalize()}, {mix_country1[1][2]}% {mix_country1[1][0].capitalize()} and {mix_country1[2][2]}% {mix_country1[2][0].capitalize()}
   
-{country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}""")
+{country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}
+
+These figures, provided by @electricitymap, represent the electricity 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 as of {timestamp_berlin} Berlin's time.
+""")
 
 def get_data(division, country1, country2):
   co2_country1 = get_co2(country1, division)
