@@ -177,9 +177,9 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
 
   country1_emoji = emoji_list[country1]
   country2_emoji = emoji_list[country2]
-  client.create_tweet(text=f"""{country1_emoji} {country1.upper()}: {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][0].upper()} {mix_country1[0][2]}%, {mix_country1[1][0].upper()} {mix_country1[1][2]}% and {mix_country1[2][0].upper()} {mix_country1[2][2]}%
+  client.create_tweet(text=f"""{country1_emoji} {country1.upper()}: {co2_country1}g CO2/kWh {co2_country1_emoji} using {mix_country1[0][2]}% {mix_country1[0][0].capitalize()}, {mix_country1[1][2]}% {mix_country1[1][0].capitalize()} and {mix_country1[2][2]}% {mix_country1[2][0].capitalize()}
   
-{country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][0].upper()} {mix_country2[0][2]}%, {mix_country2[1][0].upper()} {mix_country2[1][2]}% and {mix_country2[2][0].upper()} {mix_country2[2][2]}%""")
+{country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}""")
 
 def get_data(division, country1, country2):
   co2_country1 = get_co2(country1, division)
