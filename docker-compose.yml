@@ -14,7 +14,10 @@ services:
       - TWEETER_ACCESS_TOKEN_SECRET=${TWEETER_ACCESS_TOKEN_SECRET}
     volumes:
       - ./:/app
-    command: tail -f /dev/null
+      - ./airflow:/root/airflow
+    command: /bin/sh -c "/app/run_on_startup.sh"
+    ports:
+      - "8082:8080"
 
   postgres:
     image: postgres:13
