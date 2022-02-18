@@ -5634,3 +5634,1025 @@
 [2022-02-18 19:44:28,712] {logging_mixin.py:104} INFO - [2022-02-18 19:44:28,712] {dag.py:1818} INFO - Sync 1 DAGs
 [2022-02-18 19:44:28,743] {logging_mixin.py:104} INFO - [2022-02-18 19:44:28,743] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
 [2022-02-18 19:44:28,753] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 19:44:58,865] {scheduler_job.py:182} INFO - Started process (PID=4113) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:44:58,868] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:44:58,873] {logging_mixin.py:104} INFO - [2022-02-18 19:44:58,873] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:44:58,900] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:44:58,926] {logging_mixin.py:104} INFO - [2022-02-18 19:44:58,926] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:44:58,963] {logging_mixin.py:104} INFO - [2022-02-18 19:44:58,963] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:44:58,983] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.124 seconds
+[2022-02-18 19:45:29,198] {scheduler_job.py:182} INFO - Started process (PID=4131) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:45:29,199] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:45:29,200] {logging_mixin.py:104} INFO - [2022-02-18 19:45:29,200] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:45:29,220] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:45:29,238] {logging_mixin.py:104} INFO - [2022-02-18 19:45:29,238] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:45:29,266] {logging_mixin.py:104} INFO - [2022-02-18 19:45:29,266] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:45:29,279] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.086 seconds
+[2022-02-18 19:45:59,396] {scheduler_job.py:182} INFO - Started process (PID=4139) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:45:59,398] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:45:59,399] {logging_mixin.py:104} INFO - [2022-02-18 19:45:59,399] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:45:59,417] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:45:59,436] {logging_mixin.py:104} INFO - [2022-02-18 19:45:59,436] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:45:59,462] {logging_mixin.py:104} INFO - [2022-02-18 19:45:59,462] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:45:59,473] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 19:46:29,596] {scheduler_job.py:182} INFO - Started process (PID=4144) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:46:29,597] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:46:29,597] {logging_mixin.py:104} INFO - [2022-02-18 19:46:29,597] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:46:29,610] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:46:29,625] {logging_mixin.py:104} INFO - [2022-02-18 19:46:29,625] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:46:29,647] {logging_mixin.py:104} INFO - [2022-02-18 19:46:29,647] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:46:29,656] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.063 seconds
+[2022-02-18 19:46:59,717] {scheduler_job.py:182} INFO - Started process (PID=4149) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:46:59,719] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:46:59,719] {logging_mixin.py:104} INFO - [2022-02-18 19:46:59,719] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:46:59,748] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:46:59,781] {logging_mixin.py:104} INFO - [2022-02-18 19:46:59,781] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:46:59,809] {logging_mixin.py:104} INFO - [2022-02-18 19:46:59,809] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:46:59,818] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.105 seconds
+[2022-02-18 19:47:30,020] {scheduler_job.py:182} INFO - Started process (PID=4154) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:47:30,022] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:47:30,023] {logging_mixin.py:104} INFO - [2022-02-18 19:47:30,023] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:47:30,044] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:47:30,061] {logging_mixin.py:104} INFO - [2022-02-18 19:47:30,061] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:47:30,090] {logging_mixin.py:104} INFO - [2022-02-18 19:47:30,090] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:47:30,100] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.085 seconds
+[2022-02-18 19:48:00,208] {scheduler_job.py:182} INFO - Started process (PID=4159) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:48:00,210] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:48:00,211] {logging_mixin.py:104} INFO - [2022-02-18 19:48:00,211] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:48:00,235] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:48:00,255] {logging_mixin.py:104} INFO - [2022-02-18 19:48:00,255] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:48:00,285] {logging_mixin.py:104} INFO - [2022-02-18 19:48:00,285] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:48:00,295] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.092 seconds
+[2022-02-18 19:48:30,426] {scheduler_job.py:182} INFO - Started process (PID=4164) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:48:30,427] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:48:30,428] {logging_mixin.py:104} INFO - [2022-02-18 19:48:30,428] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:48:30,445] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:48:30,467] {logging_mixin.py:104} INFO - [2022-02-18 19:48:30,467] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:48:30,494] {logging_mixin.py:104} INFO - [2022-02-18 19:48:30,493] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:48:30,511] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 19:49:00,615] {scheduler_job.py:182} INFO - Started process (PID=4169) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:49:00,617] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:49:00,619] {logging_mixin.py:104} INFO - [2022-02-18 19:49:00,618] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:49:00,639] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:49:00,661] {logging_mixin.py:104} INFO - [2022-02-18 19:49:00,661] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:49:00,694] {logging_mixin.py:104} INFO - [2022-02-18 19:49:00,694] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:49:00,706] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.095 seconds
+[2022-02-18 19:49:30,821] {scheduler_job.py:182} INFO - Started process (PID=4174) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:49:30,823] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:49:30,824] {logging_mixin.py:104} INFO - [2022-02-18 19:49:30,824] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:49:30,845] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:49:30,871] {logging_mixin.py:104} INFO - [2022-02-18 19:49:30,871] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:49:30,912] {logging_mixin.py:104} INFO - [2022-02-18 19:49:30,912] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:49:30,925] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.109 seconds
+[2022-02-18 19:50:01,122] {scheduler_job.py:182} INFO - Started process (PID=4179) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:50:01,124] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:50:01,125] {logging_mixin.py:104} INFO - [2022-02-18 19:50:01,124] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:50:01,145] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:50:01,164] {logging_mixin.py:104} INFO - [2022-02-18 19:50:01,164] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:50:01,196] {logging_mixin.py:104} INFO - [2022-02-18 19:50:01,196] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:50:01,209] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 19:50:31,239] {scheduler_job.py:182} INFO - Started process (PID=4184) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:50:31,241] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:50:31,242] {logging_mixin.py:104} INFO - [2022-02-18 19:50:31,242] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:50:31,259] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:50:31,285] {logging_mixin.py:104} INFO - [2022-02-18 19:50:31,285] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:50:31,313] {logging_mixin.py:104} INFO - [2022-02-18 19:50:31,313] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:50:31,323] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.088 seconds
+[2022-02-18 19:51:01,449] {scheduler_job.py:182} INFO - Started process (PID=4189) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:51:01,452] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:51:01,453] {logging_mixin.py:104} INFO - [2022-02-18 19:51:01,453] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:51:01,486] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:51:01,518] {logging_mixin.py:104} INFO - [2022-02-18 19:51:01,518] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:51:01,562] {logging_mixin.py:104} INFO - [2022-02-18 19:51:01,562] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:51:01,576] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.135 seconds
+[2022-02-18 19:51:31,762] {scheduler_job.py:182} INFO - Started process (PID=4198) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:51:31,764] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:51:31,765] {logging_mixin.py:104} INFO - [2022-02-18 19:51:31,765] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:51:31,791] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:51:31,819] {logging_mixin.py:104} INFO - [2022-02-18 19:51:31,819] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:51:31,852] {logging_mixin.py:104} INFO - [2022-02-18 19:51:31,852] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:51:31,864] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.107 seconds
+[2022-02-18 19:52:02,055] {scheduler_job.py:182} INFO - Started process (PID=4215) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:52:02,056] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:52:02,057] {logging_mixin.py:104} INFO - [2022-02-18 19:52:02,057] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:52:02,072] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:52:02,089] {logging_mixin.py:104} INFO - [2022-02-18 19:52:02,089] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:52:02,114] {logging_mixin.py:104} INFO - [2022-02-18 19:52:02,114] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:52:02,123] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.071 seconds
+[2022-02-18 19:52:32,268] {scheduler_job.py:182} INFO - Started process (PID=4220) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:52:32,270] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:52:32,271] {logging_mixin.py:104} INFO - [2022-02-18 19:52:32,271] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:52:32,290] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:52:32,309] {logging_mixin.py:104} INFO - [2022-02-18 19:52:32,309] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:52:32,334] {logging_mixin.py:104} INFO - [2022-02-18 19:52:32,333] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:52:32,342] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.080 seconds
+[2022-02-18 19:53:02,475] {scheduler_job.py:182} INFO - Started process (PID=4229) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:53:02,476] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:53:02,476] {logging_mixin.py:104} INFO - [2022-02-18 19:53:02,476] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:53:02,490] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:53:02,509] {logging_mixin.py:104} INFO - [2022-02-18 19:53:02,508] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:53:02,542] {logging_mixin.py:104} INFO - [2022-02-18 19:53:02,542] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:53:02,554] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 19:53:32,683] {scheduler_job.py:182} INFO - Started process (PID=4234) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:53:32,685] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:53:32,686] {logging_mixin.py:104} INFO - [2022-02-18 19:53:32,686] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:53:32,702] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:53:32,719] {logging_mixin.py:104} INFO - [2022-02-18 19:53:32,719] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:53:32,744] {logging_mixin.py:104} INFO - [2022-02-18 19:53:32,744] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:53:32,754] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.075 seconds
+[2022-02-18 19:54:02,881] {scheduler_job.py:182} INFO - Started process (PID=4239) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:54:02,883] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:54:02,884] {logging_mixin.py:104} INFO - [2022-02-18 19:54:02,884] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:54:02,902] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:54:02,922] {logging_mixin.py:104} INFO - [2022-02-18 19:54:02,922] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:54:02,947] {logging_mixin.py:104} INFO - [2022-02-18 19:54:02,947] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:54:02,956] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 19:54:33,041] {scheduler_job.py:182} INFO - Started process (PID=4244) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:54:33,042] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:54:33,043] {logging_mixin.py:104} INFO - [2022-02-18 19:54:33,043] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:54:33,062] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:54:33,080] {logging_mixin.py:104} INFO - [2022-02-18 19:54:33,080] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:54:33,112] {logging_mixin.py:104} INFO - [2022-02-18 19:54:33,112] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:54:33,124] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.087 seconds
+[2022-02-18 19:55:03,274] {scheduler_job.py:182} INFO - Started process (PID=4249) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:55:03,275] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:55:03,276] {logging_mixin.py:104} INFO - [2022-02-18 19:55:03,276] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:55:03,294] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:55:03,312] {logging_mixin.py:104} INFO - [2022-02-18 19:55:03,312] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:55:03,340] {logging_mixin.py:104} INFO - [2022-02-18 19:55:03,340] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:55:03,351] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 19:55:33,478] {scheduler_job.py:182} INFO - Started process (PID=4254) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:55:33,480] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:55:33,482] {logging_mixin.py:104} INFO - [2022-02-18 19:55:33,480] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:55:33,499] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:55:33,524] {logging_mixin.py:104} INFO - [2022-02-18 19:55:33,524] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:55:33,552] {logging_mixin.py:104} INFO - [2022-02-18 19:55:33,551] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:55:33,562] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 19:56:03,672] {scheduler_job.py:182} INFO - Started process (PID=4263) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:56:03,674] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:56:03,675] {logging_mixin.py:104} INFO - [2022-02-18 19:56:03,675] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:56:03,706] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:56:03,737] {logging_mixin.py:104} INFO - [2022-02-18 19:56:03,736] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:56:03,784] {logging_mixin.py:104} INFO - [2022-02-18 19:56:03,783] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:56:03,799] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.135 seconds
+[2022-02-18 19:56:33,992] {scheduler_job.py:182} INFO - Started process (PID=4268) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:56:33,995] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:56:33,996] {logging_mixin.py:104} INFO - [2022-02-18 19:56:33,996] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:56:34,022] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:56:34,045] {logging_mixin.py:104} INFO - [2022-02-18 19:56:34,045] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:56:34,077] {logging_mixin.py:104} INFO - [2022-02-18 19:56:34,077] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:56:34,089] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.103 seconds
+[2022-02-18 19:57:04,304] {scheduler_job.py:182} INFO - Started process (PID=4273) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:57:04,305] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:57:04,306] {logging_mixin.py:104} INFO - [2022-02-18 19:57:04,306] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:57:04,317] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:57:04,330] {logging_mixin.py:104} INFO - [2022-02-18 19:57:04,330] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:57:04,348] {logging_mixin.py:104} INFO - [2022-02-18 19:57:04,348] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:57:04,355] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.054 seconds
+[2022-02-18 19:57:34,489] {scheduler_job.py:182} INFO - Started process (PID=4278) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:57:34,490] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:57:34,491] {logging_mixin.py:104} INFO - [2022-02-18 19:57:34,491] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:57:34,503] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:57:34,516] {logging_mixin.py:104} INFO - [2022-02-18 19:57:34,515] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:57:34,533] {logging_mixin.py:104} INFO - [2022-02-18 19:57:34,533] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:57:34,541] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.055 seconds
+[2022-02-18 19:58:04,709] {scheduler_job.py:182} INFO - Started process (PID=4283) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:58:04,711] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:58:04,712] {logging_mixin.py:104} INFO - [2022-02-18 19:58:04,712] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:58:04,732] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:58:04,753] {logging_mixin.py:104} INFO - [2022-02-18 19:58:04,753] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:58:04,781] {logging_mixin.py:104} INFO - [2022-02-18 19:58:04,781] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:58:04,791] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.088 seconds
+[2022-02-18 19:58:34,904] {scheduler_job.py:182} INFO - Started process (PID=4288) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:58:34,907] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:58:34,908] {logging_mixin.py:104} INFO - [2022-02-18 19:58:34,908] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:58:34,927] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:58:34,949] {logging_mixin.py:104} INFO - [2022-02-18 19:58:34,948] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:58:34,977] {logging_mixin.py:104} INFO - [2022-02-18 19:58:34,977] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:58:34,988] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 19:59:05,113] {scheduler_job.py:182} INFO - Started process (PID=4293) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:59:05,115] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:59:05,116] {logging_mixin.py:104} INFO - [2022-02-18 19:59:05,115] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:59:05,136] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:59:05,158] {logging_mixin.py:104} INFO - [2022-02-18 19:59:05,158] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:59:05,187] {logging_mixin.py:104} INFO - [2022-02-18 19:59:05,187] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:59:05,196] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.088 seconds
+[2022-02-18 19:59:35,310] {scheduler_job.py:182} INFO - Started process (PID=4298) to work on /root/airflow/dags/matchup.py
+[2022-02-18 19:59:35,312] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 19:59:35,313] {logging_mixin.py:104} INFO - [2022-02-18 19:59:35,313] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 19:59:35,330] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 19:59:35,349] {logging_mixin.py:104} INFO - [2022-02-18 19:59:35,349] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 19:59:35,377] {logging_mixin.py:104} INFO - [2022-02-18 19:59:35,377] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 19:59:35,391] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.087 seconds
+[2022-02-18 20:00:05,515] {scheduler_job.py:182} INFO - Started process (PID=4303) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:00:05,517] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:00:05,519] {logging_mixin.py:104} INFO - [2022-02-18 20:00:05,519] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:00:05,546] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:00:05,569] {logging_mixin.py:104} INFO - [2022-02-18 20:00:05,569] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:00:05,600] {logging_mixin.py:104} INFO - [2022-02-18 20:00:05,600] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:00:05,611] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.102 seconds
+[2022-02-18 20:00:35,818] {scheduler_job.py:182} INFO - Started process (PID=4308) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:00:35,820] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:00:35,820] {logging_mixin.py:104} INFO - [2022-02-18 20:00:35,820] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:00:35,842] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:00:35,867] {logging_mixin.py:104} INFO - [2022-02-18 20:00:35,867] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:00:35,892] {logging_mixin.py:104} INFO - [2022-02-18 20:00:35,892] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:00:35,902] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.090 seconds
+[2022-02-18 20:01:05,966] {scheduler_job.py:182} INFO - Started process (PID=4313) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:01:05,968] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:01:05,968] {logging_mixin.py:104} INFO - [2022-02-18 20:01:05,968] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:01:05,979] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:01:05,990] {logging_mixin.py:104} INFO - [2022-02-18 20:01:05,990] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:01:06,010] {logging_mixin.py:104} INFO - [2022-02-18 20:01:06,010] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:01:06,015] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.052 seconds
+[2022-02-18 20:01:36,174] {scheduler_job.py:182} INFO - Started process (PID=4318) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:01:36,177] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:01:36,178] {logging_mixin.py:104} INFO - [2022-02-18 20:01:36,177] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:01:36,196] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:01:36,219] {logging_mixin.py:104} INFO - [2022-02-18 20:01:36,219] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:01:36,254] {logging_mixin.py:104} INFO - [2022-02-18 20:01:36,253] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:01:36,266] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.098 seconds
+[2022-02-18 20:02:06,474] {scheduler_job.py:182} INFO - Started process (PID=4323) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:02:06,475] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:02:06,476] {logging_mixin.py:104} INFO - [2022-02-18 20:02:06,476] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:02:06,491] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:02:06,508] {logging_mixin.py:104} INFO - [2022-02-18 20:02:06,508] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:02:06,536] {logging_mixin.py:104} INFO - [2022-02-18 20:02:06,536] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:02:06,546] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.077 seconds
+[2022-02-18 20:02:36,678] {scheduler_job.py:182} INFO - Started process (PID=4328) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:02:36,679] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:02:36,680] {logging_mixin.py:104} INFO - [2022-02-18 20:02:36,680] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:02:36,703] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:02:36,726] {logging_mixin.py:104} INFO - [2022-02-18 20:02:36,726] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:02:36,755] {logging_mixin.py:104} INFO - [2022-02-18 20:02:36,755] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:02:36,764] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:03:06,879] {scheduler_job.py:182} INFO - Started process (PID=4333) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:03:06,880] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:03:06,881] {logging_mixin.py:104} INFO - [2022-02-18 20:03:06,881] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:03:06,901] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:03:06,923] {logging_mixin.py:104} INFO - [2022-02-18 20:03:06,923] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:03:06,954] {logging_mixin.py:104} INFO - [2022-02-18 20:03:06,953] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:03:06,962] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 20:03:37,075] {scheduler_job.py:182} INFO - Started process (PID=4335) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:03:37,077] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:03:37,078] {logging_mixin.py:104} INFO - [2022-02-18 20:03:37,077] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:03:37,098] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:03:37,118] {logging_mixin.py:104} INFO - [2022-02-18 20:03:37,118] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:03:37,143] {logging_mixin.py:104} INFO - [2022-02-18 20:03:37,143] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:03:37,153] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 20:04:07,277] {scheduler_job.py:182} INFO - Started process (PID=4339) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:04:07,279] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:04:07,280] {logging_mixin.py:104} INFO - [2022-02-18 20:04:07,280] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:04:07,301] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:04:07,326] {logging_mixin.py:104} INFO - [2022-02-18 20:04:07,326] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:04:07,355] {logging_mixin.py:104} INFO - [2022-02-18 20:04:07,355] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:04:07,365] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.095 seconds
+[2022-02-18 20:04:37,577] {scheduler_job.py:182} INFO - Started process (PID=4344) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:04:37,580] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:04:37,581] {logging_mixin.py:104} INFO - [2022-02-18 20:04:37,581] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:04:37,602] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:04:37,626] {logging_mixin.py:104} INFO - [2022-02-18 20:04:37,626] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:04:37,662] {logging_mixin.py:104} INFO - [2022-02-18 20:04:37,661] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:04:37,675] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.103 seconds
+[2022-02-18 20:05:07,875] {scheduler_job.py:182} INFO - Started process (PID=4349) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:05:07,876] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:05:07,877] {logging_mixin.py:104} INFO - [2022-02-18 20:05:07,877] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:05:07,893] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:05:07,912] {logging_mixin.py:104} INFO - [2022-02-18 20:05:07,912] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:05:07,938] {logging_mixin.py:104} INFO - [2022-02-18 20:05:07,938] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:05:07,948] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.078 seconds
+[2022-02-18 20:05:38,079] {scheduler_job.py:182} INFO - Started process (PID=4354) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:05:38,081] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:05:38,082] {logging_mixin.py:104} INFO - [2022-02-18 20:05:38,082] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:05:38,098] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:05:38,116] {logging_mixin.py:104} INFO - [2022-02-18 20:05:38,116] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:05:38,143] {logging_mixin.py:104} INFO - [2022-02-18 20:05:38,143] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:05:38,152] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.079 seconds
+[2022-02-18 20:06:08,282] {scheduler_job.py:182} INFO - Started process (PID=4359) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:06:08,283] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:06:08,285] {logging_mixin.py:104} INFO - [2022-02-18 20:06:08,284] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:06:08,309] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:06:08,330] {logging_mixin.py:104} INFO - [2022-02-18 20:06:08,330] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:06:08,357] {logging_mixin.py:104} INFO - [2022-02-18 20:06:08,357] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:06:08,369] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.092 seconds
+[2022-02-18 20:06:38,486] {scheduler_job.py:182} INFO - Started process (PID=4364) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:06:38,487] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:06:38,488] {logging_mixin.py:104} INFO - [2022-02-18 20:06:38,488] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:06:38,506] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:06:38,526] {logging_mixin.py:104} INFO - [2022-02-18 20:06:38,526] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:06:38,557] {logging_mixin.py:104} INFO - [2022-02-18 20:06:38,557] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:06:38,568] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.086 seconds
+[2022-02-18 20:07:08,688] {scheduler_job.py:182} INFO - Started process (PID=4369) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:07:08,690] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:07:08,691] {logging_mixin.py:104} INFO - [2022-02-18 20:07:08,691] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:07:08,710] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:07:08,728] {logging_mixin.py:104} INFO - [2022-02-18 20:07:08,728] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:07:08,755] {logging_mixin.py:104} INFO - [2022-02-18 20:07:08,755] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:07:08,766] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 20:07:38,896] {scheduler_job.py:182} INFO - Started process (PID=4374) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:07:38,898] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:07:38,899] {logging_mixin.py:104} INFO - [2022-02-18 20:07:38,899] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:07:38,924] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:07:38,947] {logging_mixin.py:104} INFO - [2022-02-18 20:07:38,946] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:07:38,976] {logging_mixin.py:104} INFO - [2022-02-18 20:07:38,976] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:07:38,988] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.099 seconds
+[2022-02-18 20:08:09,207] {scheduler_job.py:182} INFO - Started process (PID=4379) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:08:09,208] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:08:09,209] {logging_mixin.py:104} INFO - [2022-02-18 20:08:09,208] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:08:09,221] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:08:09,234] {logging_mixin.py:104} INFO - [2022-02-18 20:08:09,234] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:08:09,250] {logging_mixin.py:104} INFO - [2022-02-18 20:08:09,249] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:08:09,255] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.052 seconds
+[2022-02-18 20:08:39,413] {scheduler_job.py:182} INFO - Started process (PID=4384) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:08:39,415] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:08:39,415] {logging_mixin.py:104} INFO - [2022-02-18 20:08:39,415] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:08:39,432] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:08:39,451] {logging_mixin.py:104} INFO - [2022-02-18 20:08:39,451] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:08:39,480] {logging_mixin.py:104} INFO - [2022-02-18 20:08:39,480] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:08:39,492] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:09:09,550] {scheduler_job.py:182} INFO - Started process (PID=4389) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:09:09,552] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:09:09,553] {logging_mixin.py:104} INFO - [2022-02-18 20:09:09,553] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:09:09,569] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:09:09,587] {logging_mixin.py:104} INFO - [2022-02-18 20:09:09,587] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:09:09,612] {logging_mixin.py:104} INFO - [2022-02-18 20:09:09,612] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:09:09,622] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.076 seconds
+[2022-02-18 20:09:39,761] {scheduler_job.py:182} INFO - Started process (PID=4394) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:09:39,763] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:09:39,764] {logging_mixin.py:104} INFO - [2022-02-18 20:09:39,763] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:09:39,785] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:09:39,808] {logging_mixin.py:104} INFO - [2022-02-18 20:09:39,807] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:09:39,834] {logging_mixin.py:104} INFO - [2022-02-18 20:09:39,834] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:09:39,844] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 20:10:09,958] {scheduler_job.py:182} INFO - Started process (PID=4399) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:10:09,959] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:10:09,960] {logging_mixin.py:104} INFO - [2022-02-18 20:10:09,960] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:10:09,977] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:10:09,996] {logging_mixin.py:104} INFO - [2022-02-18 20:10:09,996] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:10:10,025] {logging_mixin.py:104} INFO - [2022-02-18 20:10:10,025] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:10:10,036] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:10:40,162] {scheduler_job.py:182} INFO - Started process (PID=4404) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:10:40,164] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:10:40,164] {logging_mixin.py:104} INFO - [2022-02-18 20:10:40,164] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:10:40,181] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:10:40,207] {logging_mixin.py:104} INFO - [2022-02-18 20:10:40,207] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:10:40,239] {logging_mixin.py:104} INFO - [2022-02-18 20:10:40,239] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:10:40,249] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:11:10,374] {scheduler_job.py:182} INFO - Started process (PID=4409) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:11:10,376] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:11:10,377] {logging_mixin.py:104} INFO - [2022-02-18 20:11:10,376] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:11:10,396] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:11:10,418] {logging_mixin.py:104} INFO - [2022-02-18 20:11:10,418] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:11:10,451] {logging_mixin.py:104} INFO - [2022-02-18 20:11:10,451] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:11:10,462] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.094 seconds
+[2022-02-18 20:11:40,559] {scheduler_job.py:182} INFO - Started process (PID=4414) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:11:40,560] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:11:40,561] {logging_mixin.py:104} INFO - [2022-02-18 20:11:40,561] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:11:40,581] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:11:40,607] {logging_mixin.py:104} INFO - [2022-02-18 20:11:40,607] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:11:40,638] {logging_mixin.py:104} INFO - [2022-02-18 20:11:40,638] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:11:40,648] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.095 seconds
+[2022-02-18 20:12:10,864] {scheduler_job.py:182} INFO - Started process (PID=4419) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:12:10,865] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:12:10,866] {logging_mixin.py:104} INFO - [2022-02-18 20:12:10,866] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:12:10,882] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:12:10,899] {logging_mixin.py:104} INFO - [2022-02-18 20:12:10,899] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:12:10,924] {logging_mixin.py:104} INFO - [2022-02-18 20:12:10,924] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:12:10,935] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.076 seconds
+[2022-02-18 20:12:41,066] {scheduler_job.py:182} INFO - Started process (PID=4424) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:12:41,069] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:12:41,069] {logging_mixin.py:104} INFO - [2022-02-18 20:12:41,069] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:12:41,087] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:12:41,109] {logging_mixin.py:104} INFO - [2022-02-18 20:12:41,108] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:12:41,136] {logging_mixin.py:104} INFO - [2022-02-18 20:12:41,135] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:12:41,145] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.085 seconds
+[2022-02-18 20:13:11,276] {scheduler_job.py:182} INFO - Started process (PID=4429) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:13:11,277] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:13:11,278] {logging_mixin.py:104} INFO - [2022-02-18 20:13:11,278] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:13:11,306] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:13:11,326] {logging_mixin.py:104} INFO - [2022-02-18 20:13:11,326] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:13:11,357] {logging_mixin.py:104} INFO - [2022-02-18 20:13:11,357] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:13:11,369] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.099 seconds
+[2022-02-18 20:13:41,593] {scheduler_job.py:182} INFO - Started process (PID=4434) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:13:41,594] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:13:41,595] {logging_mixin.py:104} INFO - [2022-02-18 20:13:41,595] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:13:41,613] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:13:41,635] {logging_mixin.py:104} INFO - [2022-02-18 20:13:41,635] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:13:41,660] {logging_mixin.py:104} INFO - [2022-02-18 20:13:41,660] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:13:41,669] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 20:14:11,800] {scheduler_job.py:182} INFO - Started process (PID=4439) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:14:11,801] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:14:11,801] {logging_mixin.py:104} INFO - [2022-02-18 20:14:11,801] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:14:11,813] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:14:11,829] {logging_mixin.py:104} INFO - [2022-02-18 20:14:11,829] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:14:11,848] {logging_mixin.py:104} INFO - [2022-02-18 20:14:11,848] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:14:11,856] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.059 seconds
+[2022-02-18 20:14:41,999] {scheduler_job.py:182} INFO - Started process (PID=4444) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:14:42,001] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:14:42,002] {logging_mixin.py:104} INFO - [2022-02-18 20:14:42,002] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:14:42,020] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:14:42,038] {logging_mixin.py:104} INFO - [2022-02-18 20:14:42,038] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:14:42,063] {logging_mixin.py:104} INFO - [2022-02-18 20:14:42,063] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:14:42,070] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.076 seconds
+[2022-02-18 20:15:12,236] {scheduler_job.py:182} INFO - Started process (PID=4449) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:15:12,238] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:15:12,239] {logging_mixin.py:104} INFO - [2022-02-18 20:15:12,239] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:15:12,260] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:15:12,284] {logging_mixin.py:104} INFO - [2022-02-18 20:15:12,284] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:15:12,312] {logging_mixin.py:104} INFO - [2022-02-18 20:15:12,312] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:15:12,321] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.090 seconds
+[2022-02-18 20:15:42,378] {scheduler_job.py:182} INFO - Started process (PID=4454) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:15:42,381] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:15:42,382] {logging_mixin.py:104} INFO - [2022-02-18 20:15:42,381] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:15:42,404] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:15:42,432] {logging_mixin.py:104} INFO - [2022-02-18 20:15:42,432] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:15:42,460] {logging_mixin.py:104} INFO - [2022-02-18 20:15:42,460] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:15:42,470] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.097 seconds
+[2022-02-18 20:16:12,663] {scheduler_job.py:182} INFO - Started process (PID=4459) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:16:12,665] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:16:12,666] {logging_mixin.py:104} INFO - [2022-02-18 20:16:12,666] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:16:12,687] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:16:12,708] {logging_mixin.py:104} INFO - [2022-02-18 20:16:12,708] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:16:12,737] {logging_mixin.py:104} INFO - [2022-02-18 20:16:12,737] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:16:12,747] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.090 seconds
+[2022-02-18 20:16:42,863] {scheduler_job.py:182} INFO - Started process (PID=4468) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:16:42,865] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:16:42,866] {logging_mixin.py:104} INFO - [2022-02-18 20:16:42,866] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:16:42,888] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:16:42,916] {logging_mixin.py:104} INFO - [2022-02-18 20:16:42,916] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:16:42,944] {logging_mixin.py:104} INFO - [2022-02-18 20:16:42,944] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:16:42,954] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.098 seconds
+[2022-02-18 20:17:13,153] {scheduler_job.py:182} INFO - Started process (PID=4477) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:17:13,155] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:17:13,156] {logging_mixin.py:104} INFO - [2022-02-18 20:17:13,156] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:17:13,175] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:17:13,191] {logging_mixin.py:104} INFO - [2022-02-18 20:17:13,191] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:17:13,221] {logging_mixin.py:104} INFO - [2022-02-18 20:17:13,221] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:17:13,232] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:17:43,357] {scheduler_job.py:182} INFO - Started process (PID=4482) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:17:43,360] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:17:43,360] {logging_mixin.py:104} INFO - [2022-02-18 20:17:43,360] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:17:43,375] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:17:43,392] {logging_mixin.py:104} INFO - [2022-02-18 20:17:43,392] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:17:43,418] {logging_mixin.py:104} INFO - [2022-02-18 20:17:43,417] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:17:43,427] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.074 seconds
+[2022-02-18 20:18:13,552] {scheduler_job.py:182} INFO - Started process (PID=4487) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:18:13,554] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:18:13,556] {logging_mixin.py:104} INFO - [2022-02-18 20:18:13,555] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:18:13,577] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:18:13,598] {logging_mixin.py:104} INFO - [2022-02-18 20:18:13,597] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:18:13,627] {logging_mixin.py:104} INFO - [2022-02-18 20:18:13,627] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:18:13,637] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:18:43,766] {scheduler_job.py:182} INFO - Started process (PID=4493) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:18:43,768] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:18:43,769] {logging_mixin.py:104} INFO - [2022-02-18 20:18:43,769] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:18:43,790] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:18:43,814] {logging_mixin.py:104} INFO - [2022-02-18 20:18:43,814] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:18:43,841] {logging_mixin.py:104} INFO - [2022-02-18 20:18:43,841] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:18:43,852] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:19:13,976] {scheduler_job.py:182} INFO - Started process (PID=4501) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:19:13,978] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:19:13,979] {logging_mixin.py:104} INFO - [2022-02-18 20:19:13,978] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:19:13,995] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:19:14,014] {logging_mixin.py:104} INFO - [2022-02-18 20:19:14,014] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:19:14,043] {logging_mixin.py:104} INFO - [2022-02-18 20:19:14,042] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:19:14,053] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 20:19:44,177] {scheduler_job.py:182} INFO - Started process (PID=4506) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:19:44,178] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:19:44,179] {logging_mixin.py:104} INFO - [2022-02-18 20:19:44,179] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:19:44,199] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:19:44,219] {logging_mixin.py:104} INFO - [2022-02-18 20:19:44,218] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:19:44,243] {logging_mixin.py:104} INFO - [2022-02-18 20:19:44,243] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:19:44,252] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 20:20:14,377] {scheduler_job.py:182} INFO - Started process (PID=4519) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:20:14,378] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:20:14,379] {logging_mixin.py:104} INFO - [2022-02-18 20:20:14,379] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:20:14,399] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:20:14,420] {logging_mixin.py:104} INFO - [2022-02-18 20:20:14,420] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:20:14,448] {logging_mixin.py:104} INFO - [2022-02-18 20:20:14,448] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:20:14,461] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 20:20:44,562] {scheduler_job.py:182} INFO - Started process (PID=4528) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:20:44,564] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:20:44,565] {logging_mixin.py:104} INFO - [2022-02-18 20:20:44,565] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:20:44,582] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:20:44,601] {logging_mixin.py:104} INFO - [2022-02-18 20:20:44,601] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:20:44,634] {logging_mixin.py:104} INFO - [2022-02-18 20:20:44,633] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:20:44,647] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.088 seconds
+[2022-02-18 20:21:14,762] {scheduler_job.py:182} INFO - Started process (PID=4533) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:21:14,763] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:21:14,764] {logging_mixin.py:104} INFO - [2022-02-18 20:21:14,764] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:21:14,782] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:21:14,800] {logging_mixin.py:104} INFO - [2022-02-18 20:21:14,800] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:21:14,826] {logging_mixin.py:104} INFO - [2022-02-18 20:21:14,826] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:21:14,835] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.077 seconds
+[2022-02-18 20:21:44,967] {scheduler_job.py:182} INFO - Started process (PID=4542) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:21:44,969] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:21:44,970] {logging_mixin.py:104} INFO - [2022-02-18 20:21:44,970] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:21:44,993] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:21:45,011] {logging_mixin.py:104} INFO - [2022-02-18 20:21:45,011] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:21:45,037] {logging_mixin.py:104} INFO - [2022-02-18 20:21:45,037] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:21:45,046] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.085 seconds
+[2022-02-18 20:22:15,171] {scheduler_job.py:182} INFO - Started process (PID=4551) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:22:15,172] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:22:15,173] {logging_mixin.py:104} INFO - [2022-02-18 20:22:15,172] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:22:15,190] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:22:15,208] {logging_mixin.py:104} INFO - [2022-02-18 20:22:15,208] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:22:15,237] {logging_mixin.py:104} INFO - [2022-02-18 20:22:15,237] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:22:15,248] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 20:22:45,289] {scheduler_job.py:182} INFO - Started process (PID=4556) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:22:45,292] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:22:45,292] {logging_mixin.py:104} INFO - [2022-02-18 20:22:45,292] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:22:45,306] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:22:45,322] {logging_mixin.py:104} INFO - [2022-02-18 20:22:45,322] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:22:45,349] {logging_mixin.py:104} INFO - [2022-02-18 20:22:45,349] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:22:45,362] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.076 seconds
+[2022-02-18 20:23:15,497] {scheduler_job.py:182} INFO - Started process (PID=4569) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:23:15,498] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:23:15,498] {logging_mixin.py:104} INFO - [2022-02-18 20:23:15,498] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:23:15,511] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:23:15,525] {logging_mixin.py:104} INFO - [2022-02-18 20:23:15,525] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:23:15,540] {logging_mixin.py:104} INFO - [2022-02-18 20:23:15,540] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:23:15,545] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.052 seconds
+[2022-02-18 20:23:45,702] {scheduler_job.py:182} INFO - Started process (PID=4574) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:23:45,703] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:23:45,704] {logging_mixin.py:104} INFO - [2022-02-18 20:23:45,704] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:23:45,721] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:23:45,739] {logging_mixin.py:104} INFO - [2022-02-18 20:23:45,739] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:23:45,758] {logging_mixin.py:104} INFO - [2022-02-18 20:23:45,758] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:23:45,764] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.068 seconds
+[2022-02-18 20:24:15,907] {scheduler_job.py:182} INFO - Started process (PID=4579) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:24:15,908] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:24:15,909] {logging_mixin.py:104} INFO - [2022-02-18 20:24:15,909] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:24:15,931] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:24:15,953] {logging_mixin.py:104} INFO - [2022-02-18 20:24:15,953] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:24:15,978] {logging_mixin.py:104} INFO - [2022-02-18 20:24:15,978] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:24:15,990] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.089 seconds
+[2022-02-18 20:24:46,122] {scheduler_job.py:182} INFO - Started process (PID=4584) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:24:46,124] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:24:46,124] {logging_mixin.py:104} INFO - [2022-02-18 20:24:46,124] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:24:46,139] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:24:46,157] {logging_mixin.py:104} INFO - [2022-02-18 20:24:46,157] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:24:46,182] {logging_mixin.py:104} INFO - [2022-02-18 20:24:46,182] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:24:46,192] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.073 seconds
+[2022-02-18 20:25:16,327] {scheduler_job.py:182} INFO - Started process (PID=4589) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:25:16,329] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:25:16,330] {logging_mixin.py:104} INFO - [2022-02-18 20:25:16,330] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:25:16,352] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:25:16,371] {logging_mixin.py:104} INFO - [2022-02-18 20:25:16,371] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:25:16,398] {logging_mixin.py:104} INFO - [2022-02-18 20:25:16,398] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:25:16,411] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:25:46,522] {scheduler_job.py:182} INFO - Started process (PID=4598) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:25:46,524] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:25:46,525] {logging_mixin.py:104} INFO - [2022-02-18 20:25:46,525] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:25:46,547] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:25:46,566] {logging_mixin.py:104} INFO - [2022-02-18 20:25:46,566] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:25:46,594] {logging_mixin.py:104} INFO - [2022-02-18 20:25:46,594] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:25:46,607] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.090 seconds
+[2022-02-18 20:26:16,721] {scheduler_job.py:182} INFO - Started process (PID=4603) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:26:16,722] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:26:16,723] {logging_mixin.py:104} INFO - [2022-02-18 20:26:16,723] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:26:16,742] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:26:16,762] {logging_mixin.py:104} INFO - [2022-02-18 20:26:16,762] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:26:16,787] {logging_mixin.py:104} INFO - [2022-02-18 20:26:16,787] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:26:16,796] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.079 seconds
+[2022-02-18 20:26:46,939] {scheduler_job.py:182} INFO - Started process (PID=4612) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:26:46,940] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:26:46,941] {logging_mixin.py:104} INFO - [2022-02-18 20:26:46,941] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:26:46,960] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:26:46,981] {logging_mixin.py:104} INFO - [2022-02-18 20:26:46,980] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:26:47,007] {logging_mixin.py:104} INFO - [2022-02-18 20:26:47,007] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:26:47,016] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:27:17,166] {scheduler_job.py:182} INFO - Started process (PID=4617) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:27:17,168] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:27:17,168] {logging_mixin.py:104} INFO - [2022-02-18 20:27:17,168] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:27:17,186] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:27:17,210] {logging_mixin.py:104} INFO - [2022-02-18 20:27:17,210] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:27:17,244] {logging_mixin.py:104} INFO - [2022-02-18 20:27:17,243] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:27:17,258] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.096 seconds
+[2022-02-18 20:27:47,458] {scheduler_job.py:182} INFO - Started process (PID=4626) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:27:47,459] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:27:47,460] {logging_mixin.py:104} INFO - [2022-02-18 20:27:47,459] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:27:47,468] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:27:47,478] {logging_mixin.py:104} INFO - [2022-02-18 20:27:47,478] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:27:47,492] {logging_mixin.py:104} INFO - [2022-02-18 20:27:47,492] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:27:47,499] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.044 seconds
+[2022-02-18 20:28:17,661] {scheduler_job.py:182} INFO - Started process (PID=4631) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:28:17,663] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:28:17,664] {logging_mixin.py:104} INFO - [2022-02-18 20:28:17,663] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:28:17,684] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:28:17,707] {logging_mixin.py:104} INFO - [2022-02-18 20:28:17,706] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:28:17,735] {logging_mixin.py:104} INFO - [2022-02-18 20:28:17,735] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:28:17,747] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:28:47,868] {scheduler_job.py:182} INFO - Started process (PID=4636) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:28:47,870] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:28:47,871] {logging_mixin.py:104} INFO - [2022-02-18 20:28:47,871] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:28:47,887] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:28:47,906] {logging_mixin.py:104} INFO - [2022-02-18 20:28:47,906] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:28:47,933] {logging_mixin.py:104} INFO - [2022-02-18 20:28:47,933] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:28:47,942] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.078 seconds
+[2022-02-18 20:29:18,090] {scheduler_job.py:182} INFO - Started process (PID=4641) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:29:18,092] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:29:18,092] {logging_mixin.py:104} INFO - [2022-02-18 20:29:18,092] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:29:18,110] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:29:18,133] {logging_mixin.py:104} INFO - [2022-02-18 20:29:18,133] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:29:18,162] {logging_mixin.py:104} INFO - [2022-02-18 20:29:18,162] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:29:18,173] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.088 seconds
+[2022-02-18 20:29:48,296] {scheduler_job.py:182} INFO - Started process (PID=4646) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:29:48,298] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:29:48,299] {logging_mixin.py:104} INFO - [2022-02-18 20:29:48,299] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:29:48,328] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:29:48,352] {logging_mixin.py:104} INFO - [2022-02-18 20:29:48,352] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:29:48,384] {logging_mixin.py:104} INFO - [2022-02-18 20:29:48,383] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:29:48,399] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.110 seconds
+[2022-02-18 20:30:18,555] {scheduler_job.py:182} INFO - Started process (PID=4651) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:30:18,556] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:30:18,557] {logging_mixin.py:104} INFO - [2022-02-18 20:30:18,556] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:30:18,572] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:30:18,588] {logging_mixin.py:104} INFO - [2022-02-18 20:30:18,588] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:30:18,615] {logging_mixin.py:104} INFO - [2022-02-18 20:30:18,614] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:30:18,626] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.075 seconds
+[2022-02-18 20:30:48,772] {scheduler_job.py:182} INFO - Started process (PID=4656) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:30:48,774] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:30:48,775] {logging_mixin.py:104} INFO - [2022-02-18 20:30:48,775] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:30:48,800] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:30:48,827] {logging_mixin.py:104} INFO - [2022-02-18 20:30:48,826] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:30:48,856] {logging_mixin.py:104} INFO - [2022-02-18 20:30:48,856] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:30:48,866] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.099 seconds
+[2022-02-18 20:31:19,107] {scheduler_job.py:182} INFO - Started process (PID=4661) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:31:19,109] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:31:19,110] {logging_mixin.py:104} INFO - [2022-02-18 20:31:19,110] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:31:19,132] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:31:19,155] {logging_mixin.py:104} INFO - [2022-02-18 20:31:19,155] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:31:19,185] {logging_mixin.py:104} INFO - [2022-02-18 20:31:19,185] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:31:19,194] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.094 seconds
+[2022-02-18 20:31:49,398] {scheduler_job.py:182} INFO - Started process (PID=4670) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:31:49,399] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:31:49,400] {logging_mixin.py:104} INFO - [2022-02-18 20:31:49,400] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:31:49,413] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:31:49,434] {logging_mixin.py:104} INFO - [2022-02-18 20:31:49,433] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:31:49,461] {logging_mixin.py:104} INFO - [2022-02-18 20:31:49,461] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:31:49,472] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.077 seconds
+[2022-02-18 20:32:19,596] {scheduler_job.py:182} INFO - Started process (PID=4675) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:32:19,598] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:32:19,599] {logging_mixin.py:104} INFO - [2022-02-18 20:32:19,599] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:32:19,618] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:32:19,641] {logging_mixin.py:104} INFO - [2022-02-18 20:32:19,641] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:32:19,673] {logging_mixin.py:104} INFO - [2022-02-18 20:32:19,672] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:32:19,685] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.093 seconds
+[2022-02-18 20:32:49,802] {scheduler_job.py:182} INFO - Started process (PID=4684) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:32:49,804] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:32:49,805] {logging_mixin.py:104} INFO - [2022-02-18 20:32:49,805] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:32:49,827] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:32:49,847] {logging_mixin.py:104} INFO - [2022-02-18 20:32:49,847] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:32:49,876] {logging_mixin.py:104} INFO - [2022-02-18 20:32:49,876] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:32:49,890] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.093 seconds
+[2022-02-18 20:33:20,015] {scheduler_job.py:182} INFO - Started process (PID=4689) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:33:20,016] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:33:20,017] {logging_mixin.py:104} INFO - [2022-02-18 20:33:20,017] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:33:20,039] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:33:20,057] {logging_mixin.py:104} INFO - [2022-02-18 20:33:20,057] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:33:20,087] {logging_mixin.py:104} INFO - [2022-02-18 20:33:20,087] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:33:20,100] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:33:50,218] {scheduler_job.py:182} INFO - Started process (PID=4694) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:33:50,219] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:33:50,220] {logging_mixin.py:104} INFO - [2022-02-18 20:33:50,220] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:33:50,234] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:33:50,256] {logging_mixin.py:104} INFO - [2022-02-18 20:33:50,255] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:33:50,287] {logging_mixin.py:104} INFO - [2022-02-18 20:33:50,286] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:33:50,298] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.084 seconds
+[2022-02-18 20:34:20,417] {scheduler_job.py:182} INFO - Started process (PID=4699) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:34:20,418] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:34:20,419] {logging_mixin.py:104} INFO - [2022-02-18 20:34:20,419] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:34:20,432] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:34:20,447] {logging_mixin.py:104} INFO - [2022-02-18 20:34:20,447] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:34:20,467] {logging_mixin.py:104} INFO - [2022-02-18 20:34:20,467] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:34:20,476] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.062 seconds
+[2022-02-18 20:34:50,622] {scheduler_job.py:182} INFO - Started process (PID=4708) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:34:50,624] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:34:50,625] {logging_mixin.py:104} INFO - [2022-02-18 20:34:50,625] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:34:50,646] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:34:50,663] {logging_mixin.py:104} INFO - [2022-02-18 20:34:50,663] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:34:50,690] {logging_mixin.py:104} INFO - [2022-02-18 20:34:50,690] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:34:50,700] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.084 seconds
+[2022-02-18 20:35:20,832] {scheduler_job.py:182} INFO - Started process (PID=4717) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:35:20,834] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:35:20,834] {logging_mixin.py:104} INFO - [2022-02-18 20:35:20,834] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:35:20,859] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:35:20,881] {logging_mixin.py:104} INFO - [2022-02-18 20:35:20,880] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:35:20,906] {logging_mixin.py:104} INFO - [2022-02-18 20:35:20,906] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:35:20,917] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.100 seconds
+[2022-02-18 20:35:51,124] {scheduler_job.py:182} INFO - Started process (PID=4723) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:35:51,125] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:35:51,126] {logging_mixin.py:104} INFO - [2022-02-18 20:35:51,126] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:35:51,140] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:35:51,157] {logging_mixin.py:104} INFO - [2022-02-18 20:35:51,157] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:35:51,184] {logging_mixin.py:104} INFO - [2022-02-18 20:35:51,184] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:35:51,193] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.074 seconds
+[2022-02-18 20:36:21,325] {scheduler_job.py:182} INFO - Started process (PID=4731) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:36:21,327] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:36:21,328] {logging_mixin.py:104} INFO - [2022-02-18 20:36:21,328] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:36:21,346] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:36:21,365] {logging_mixin.py:104} INFO - [2022-02-18 20:36:21,365] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:36:21,391] {logging_mixin.py:104} INFO - [2022-02-18 20:36:21,391] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:36:21,402] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 20:36:51,468] {scheduler_job.py:182} INFO - Started process (PID=4740) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:36:51,469] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:36:51,470] {logging_mixin.py:104} INFO - [2022-02-18 20:36:51,470] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:36:51,487] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:36:51,509] {logging_mixin.py:104} INFO - [2022-02-18 20:36:51,508] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:36:51,536] {logging_mixin.py:104} INFO - [2022-02-18 20:36:51,535] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:36:51,544] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.081 seconds
+[2022-02-18 20:37:21,655] {scheduler_job.py:182} INFO - Started process (PID=4745) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:37:21,658] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:37:21,661] {logging_mixin.py:104} INFO - [2022-02-18 20:37:21,659] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:37:21,687] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:37:21,718] {logging_mixin.py:104} INFO - [2022-02-18 20:37:21,717] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:37:21,758] {logging_mixin.py:104} INFO - [2022-02-18 20:37:21,758] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:37:21,771] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.123 seconds
+[2022-02-18 20:37:51,950] {scheduler_job.py:182} INFO - Started process (PID=4750) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:37:51,951] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:37:51,952] {logging_mixin.py:104} INFO - [2022-02-18 20:37:51,952] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:37:51,966] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:37:51,980] {logging_mixin.py:104} INFO - [2022-02-18 20:37:51,980] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:37:51,999] {logging_mixin.py:104} INFO - [2022-02-18 20:37:51,999] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:37:52,006] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.061 seconds
+[2022-02-18 20:38:22,140] {scheduler_job.py:182} INFO - Started process (PID=4755) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:38:22,141] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:38:22,142] {logging_mixin.py:104} INFO - [2022-02-18 20:38:22,142] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:38:22,161] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:38:22,180] {logging_mixin.py:104} INFO - [2022-02-18 20:38:22,179] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:38:22,219] {logging_mixin.py:104} INFO - [2022-02-18 20:38:22,219] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:38:22,232] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.097 seconds
+[2022-02-18 20:38:52,417] {scheduler_job.py:182} INFO - Started process (PID=4764) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:38:52,418] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:38:52,419] {logging_mixin.py:104} INFO - [2022-02-18 20:38:52,419] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:38:52,434] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:38:52,453] {logging_mixin.py:104} INFO - [2022-02-18 20:38:52,453] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:38:52,475] {logging_mixin.py:104} INFO - [2022-02-18 20:38:52,475] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:38:52,483] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.072 seconds
+[2022-02-18 20:39:22,607] {scheduler_job.py:182} INFO - Started process (PID=4769) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:39:22,609] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:39:22,609] {logging_mixin.py:104} INFO - [2022-02-18 20:39:22,609] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:39:22,619] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:39:22,631] {logging_mixin.py:104} INFO - [2022-02-18 20:39:22,631] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:39:22,650] {logging_mixin.py:104} INFO - [2022-02-18 20:39:22,650] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:39:22,661] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.058 seconds
+[2022-02-18 20:39:52,840] {scheduler_job.py:182} INFO - Started process (PID=4774) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:39:52,842] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:39:52,843] {logging_mixin.py:104} INFO - [2022-02-18 20:39:52,843] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:39:52,868] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:39:52,890] {logging_mixin.py:104} INFO - [2022-02-18 20:39:52,890] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:39:52,920] {logging_mixin.py:104} INFO - [2022-02-18 20:39:52,920] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:39:52,931] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.098 seconds
+[2022-02-18 20:40:23,156] {scheduler_job.py:182} INFO - Started process (PID=4783) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:40:23,157] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:40:23,158] {logging_mixin.py:104} INFO - [2022-02-18 20:40:23,158] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:40:23,173] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:40:23,189] {logging_mixin.py:104} INFO - [2022-02-18 20:40:23,189] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:40:23,211] {logging_mixin.py:104} INFO - [2022-02-18 20:40:23,211] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:40:23,219] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.068 seconds
+[2022-02-18 20:40:53,367] {scheduler_job.py:182} INFO - Started process (PID=4788) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:40:53,368] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:40:53,369] {logging_mixin.py:104} INFO - [2022-02-18 20:40:53,369] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:40:53,387] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:40:53,408] {logging_mixin.py:104} INFO - [2022-02-18 20:40:53,408] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:40:53,436] {logging_mixin.py:104} INFO - [2022-02-18 20:40:53,435] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:40:53,446] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:41:23,590] {scheduler_job.py:182} INFO - Started process (PID=4793) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:41:23,591] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:41:23,592] {logging_mixin.py:104} INFO - [2022-02-18 20:41:23,592] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:41:23,607] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:41:23,624] {logging_mixin.py:104} INFO - [2022-02-18 20:41:23,624] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:41:23,650] {logging_mixin.py:104} INFO - [2022-02-18 20:41:23,650] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:41:23,659] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.074 seconds
+[2022-02-18 20:41:53,787] {scheduler_job.py:182} INFO - Started process (PID=4798) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:41:53,789] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:41:53,790] {logging_mixin.py:104} INFO - [2022-02-18 20:41:53,790] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:41:53,811] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:41:53,836] {logging_mixin.py:104} INFO - [2022-02-18 20:41:53,836] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:41:53,866] {logging_mixin.py:104} INFO - [2022-02-18 20:41:53,866] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:41:53,876] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.094 seconds
+[2022-02-18 20:42:24,094] {scheduler_job.py:182} INFO - Started process (PID=4803) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:42:24,097] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:42:24,098] {logging_mixin.py:104} INFO - [2022-02-18 20:42:24,098] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:42:24,128] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:42:24,148] {logging_mixin.py:104} INFO - [2022-02-18 20:42:24,148] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:42:24,173] {logging_mixin.py:104} INFO - [2022-02-18 20:42:24,173] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:42:24,183] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.096 seconds
+[2022-02-18 20:42:54,409] {scheduler_job.py:182} INFO - Started process (PID=4812) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:42:54,413] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:42:54,414] {logging_mixin.py:104} INFO - [2022-02-18 20:42:54,414] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:42:54,437] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:42:54,454] {logging_mixin.py:104} INFO - [2022-02-18 20:42:54,454] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:42:54,477] {logging_mixin.py:104} INFO - [2022-02-18 20:42:54,477] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:42:54,486] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 20:43:24,612] {scheduler_job.py:182} INFO - Started process (PID=4821) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:43:24,613] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:43:24,613] {logging_mixin.py:104} INFO - [2022-02-18 20:43:24,613] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:43:24,623] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:43:24,633] {logging_mixin.py:104} INFO - [2022-02-18 20:43:24,633] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:43:24,648] {logging_mixin.py:104} INFO - [2022-02-18 20:43:24,647] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:43:24,653] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.047 seconds
+[2022-02-18 20:43:54,809] {scheduler_job.py:182} INFO - Started process (PID=4826) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:43:54,811] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:43:54,812] {logging_mixin.py:104} INFO - [2022-02-18 20:43:54,812] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:43:54,833] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:43:54,853] {logging_mixin.py:104} INFO - [2022-02-18 20:43:54,853] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:43:54,880] {logging_mixin.py:104} INFO - [2022-02-18 20:43:54,880] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:43:54,890] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.090 seconds
+[2022-02-18 20:44:25,026] {scheduler_job.py:182} INFO - Started process (PID=4839) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:44:25,029] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:44:25,030] {logging_mixin.py:104} INFO - [2022-02-18 20:44:25,030] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:44:25,056] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:44:25,082] {logging_mixin.py:104} INFO - [2022-02-18 20:44:25,082] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:44:25,111] {logging_mixin.py:104} INFO - [2022-02-18 20:44:25,111] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:44:25,122] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.104 seconds
+[2022-02-18 20:44:55,318] {scheduler_job.py:182} INFO - Started process (PID=4844) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:44:55,319] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:44:55,320] {logging_mixin.py:104} INFO - [2022-02-18 20:44:55,320] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:44:55,335] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:44:55,351] {logging_mixin.py:104} INFO - [2022-02-18 20:44:55,351] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:44:55,376] {logging_mixin.py:104} INFO - [2022-02-18 20:44:55,376] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:44:55,388] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.073 seconds
+[2022-02-18 20:45:25,521] {scheduler_job.py:182} INFO - Started process (PID=4849) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:45:25,523] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:45:25,523] {logging_mixin.py:104} INFO - [2022-02-18 20:45:25,523] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:45:25,543] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:45:25,561] {logging_mixin.py:104} INFO - [2022-02-18 20:45:25,560] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:45:25,585] {logging_mixin.py:104} INFO - [2022-02-18 20:45:25,585] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:45:25,594] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.080 seconds
+[2022-02-18 20:45:55,720] {scheduler_job.py:182} INFO - Started process (PID=4854) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:45:55,722] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:45:55,723] {logging_mixin.py:104} INFO - [2022-02-18 20:45:55,723] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:45:55,743] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:45:55,762] {logging_mixin.py:104} INFO - [2022-02-18 20:45:55,761] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:45:55,788] {logging_mixin.py:104} INFO - [2022-02-18 20:45:55,788] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:45:55,797] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.082 seconds
+[2022-02-18 20:46:25,926] {scheduler_job.py:182} INFO - Started process (PID=4863) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:46:25,928] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:46:25,928] {logging_mixin.py:104} INFO - [2022-02-18 20:46:25,928] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:46:25,949] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:46:25,972] {logging_mixin.py:104} INFO - [2022-02-18 20:46:25,972] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:46:26,006] {logging_mixin.py:104} INFO - [2022-02-18 20:46:26,006] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:46:26,020] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.098 seconds
+[2022-02-18 20:46:56,224] {scheduler_job.py:182} INFO - Started process (PID=4868) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:46:56,226] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:46:56,226] {logging_mixin.py:104} INFO - [2022-02-18 20:46:56,226] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:46:56,243] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:46:56,262] {logging_mixin.py:104} INFO - [2022-02-18 20:46:56,262] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:46:56,292] {logging_mixin.py:104} INFO - [2022-02-18 20:46:56,291] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:46:56,305] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.084 seconds
+[2022-02-18 20:47:26,431] {scheduler_job.py:182} INFO - Started process (PID=4877) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:47:26,433] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:47:26,434] {logging_mixin.py:104} INFO - [2022-02-18 20:47:26,434] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:47:26,451] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:47:26,469] {logging_mixin.py:104} INFO - [2022-02-18 20:47:26,469] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:47:26,494] {logging_mixin.py:104} INFO - [2022-02-18 20:47:26,494] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:47:26,503] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.078 seconds
+[2022-02-18 20:47:56,634] {scheduler_job.py:182} INFO - Started process (PID=4882) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:47:56,635] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:47:56,636] {logging_mixin.py:104} INFO - [2022-02-18 20:47:56,636] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:47:56,654] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:47:56,675] {logging_mixin.py:104} INFO - [2022-02-18 20:47:56,675] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:47:56,702] {logging_mixin.py:104} INFO - [2022-02-18 20:47:56,701] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:47:56,712] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.085 seconds
+[2022-02-18 20:48:26,847] {scheduler_job.py:182} INFO - Started process (PID=4887) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:48:26,848] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:48:26,849] {logging_mixin.py:104} INFO - [2022-02-18 20:48:26,849] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:48:26,864] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:48:26,883] {logging_mixin.py:104} INFO - [2022-02-18 20:48:26,882] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:48:26,908] {logging_mixin.py:104} INFO - [2022-02-18 20:48:26,908] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:48:26,918] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.075 seconds
+[2022-02-18 20:48:57,049] {scheduler_job.py:182} INFO - Started process (PID=4892) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:48:57,051] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:48:57,051] {logging_mixin.py:104} INFO - [2022-02-18 20:48:57,051] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:48:57,068] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:48:57,087] {logging_mixin.py:104} INFO - [2022-02-18 20:48:57,087] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:48:57,118] {logging_mixin.py:104} INFO - [2022-02-18 20:48:57,118] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:48:57,128] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.083 seconds
+[2022-02-18 20:49:27,252] {scheduler_job.py:182} INFO - Started process (PID=4901) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:49:27,254] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:49:27,255] {logging_mixin.py:104} INFO - [2022-02-18 20:49:27,255] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:49:27,276] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:49:27,300] {logging_mixin.py:104} INFO - [2022-02-18 20:49:27,300] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:49:27,329] {logging_mixin.py:104} INFO - [2022-02-18 20:49:27,329] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:49:27,339] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.092 seconds
+[2022-02-18 20:49:57,478] {scheduler_job.py:182} INFO - Started process (PID=4910) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:49:57,479] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:49:57,480] {logging_mixin.py:104} INFO - [2022-02-18 20:49:57,480] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:49:57,498] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:49:57,516] {logging_mixin.py:104} INFO - [2022-02-18 20:49:57,516] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:49:57,543] {logging_mixin.py:104} INFO - [2022-02-18 20:49:57,542] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:49:57,551] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.078 seconds
+[2022-02-18 20:50:27,660] {scheduler_job.py:182} INFO - Started process (PID=4915) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:50:27,662] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:50:27,663] {logging_mixin.py:104} INFO - [2022-02-18 20:50:27,662] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:50:27,679] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:50:27,698] {logging_mixin.py:104} INFO - [2022-02-18 20:50:27,697] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:50:27,725] {logging_mixin.py:104} INFO - [2022-02-18 20:50:27,725] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:50:27,735] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.078 seconds
+[2022-02-18 20:50:57,871] {scheduler_job.py:182} INFO - Started process (PID=4924) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:50:57,873] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:50:57,874] {logging_mixin.py:104} INFO - [2022-02-18 20:50:57,873] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:50:57,895] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:50:57,916] {logging_mixin.py:104} INFO - [2022-02-18 20:50:57,916] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:50:57,946] {logging_mixin.py:104} INFO - [2022-02-18 20:50:57,946] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:50:57,957] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:51:28,064] {scheduler_job.py:182} INFO - Started process (PID=4929) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:51:28,065] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:51:28,067] {logging_mixin.py:104} INFO - [2022-02-18 20:51:28,066] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:51:28,085] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:51:28,104] {logging_mixin.py:104} INFO - [2022-02-18 20:51:28,104] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:51:28,142] {logging_mixin.py:104} INFO - [2022-02-18 20:51:28,141] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:51:28,154] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.095 seconds
+[2022-02-18 20:51:58,287] {scheduler_job.py:182} INFO - Started process (PID=4934) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:51:58,288] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:51:58,289] {logging_mixin.py:104} INFO - [2022-02-18 20:51:58,289] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:51:58,300] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:51:58,312] {logging_mixin.py:104} INFO - [2022-02-18 20:51:58,312] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:51:58,329] {logging_mixin.py:104} INFO - [2022-02-18 20:51:58,329] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:51:58,335] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.051 seconds
+[2022-02-18 20:52:28,486] {scheduler_job.py:182} INFO - Started process (PID=4939) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:52:28,488] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:52:28,489] {logging_mixin.py:104} INFO - [2022-02-18 20:52:28,489] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:52:28,505] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:52:28,525] {logging_mixin.py:104} INFO - [2022-02-18 20:52:28,525] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:52:28,551] {logging_mixin.py:104} INFO - [2022-02-18 20:52:28,551] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:52:28,560] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.080 seconds
+[2022-02-18 20:52:58,639] {scheduler_job.py:182} INFO - Started process (PID=4944) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:52:58,641] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:52:58,642] {logging_mixin.py:104} INFO - [2022-02-18 20:52:58,642] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:52:58,660] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:52:58,677] {logging_mixin.py:104} INFO - [2022-02-18 20:52:58,677] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:52:58,714] {logging_mixin.py:104} INFO - [2022-02-18 20:52:58,713] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:52:58,727] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.094 seconds
+[2022-02-18 20:53:28,860] {scheduler_job.py:182} INFO - Started process (PID=4949) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:53:28,862] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:53:28,863] {logging_mixin.py:104} INFO - [2022-02-18 20:53:28,863] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:53:28,886] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:53:28,910] {logging_mixin.py:104} INFO - [2022-02-18 20:53:28,910] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:53:28,938] {logging_mixin.py:104} INFO - [2022-02-18 20:53:28,938] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:53:28,948] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.096 seconds
+[2022-02-18 20:53:59,151] {scheduler_job.py:182} INFO - Started process (PID=4954) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:53:59,153] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:53:59,153] {logging_mixin.py:104} INFO - [2022-02-18 20:53:59,153] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:53:59,169] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:53:59,192] {logging_mixin.py:104} INFO - [2022-02-18 20:53:59,192] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:53:59,224] {logging_mixin.py:104} INFO - [2022-02-18 20:53:59,224] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:53:59,233] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.086 seconds
+[2022-02-18 20:54:29,346] {scheduler_job.py:182} INFO - Started process (PID=4959) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:54:29,349] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:54:29,350] {logging_mixin.py:104} INFO - [2022-02-18 20:54:29,350] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:54:29,369] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:54:29,392] {logging_mixin.py:104} INFO - [2022-02-18 20:54:29,392] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:54:29,420] {logging_mixin.py:104} INFO - [2022-02-18 20:54:29,420] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:54:29,431] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.091 seconds
+[2022-02-18 20:54:59,549] {scheduler_job.py:182} INFO - Started process (PID=4964) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:54:59,550] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:54:59,551] {logging_mixin.py:104} INFO - [2022-02-18 20:54:59,551] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:54:59,571] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:54:59,589] {logging_mixin.py:104} INFO - [2022-02-18 20:54:59,589] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:54:59,619] {logging_mixin.py:104} INFO - [2022-02-18 20:54:59,618] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:54:59,629] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.085 seconds
+[2022-02-18 20:55:29,748] {scheduler_job.py:182} INFO - Started process (PID=4969) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:55:29,750] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:55:29,752] {logging_mixin.py:104} INFO - [2022-02-18 20:55:29,751] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:55:29,780] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:55:29,796] {logging_mixin.py:104} INFO - [2022-02-18 20:55:29,796] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:55:29,821] {logging_mixin.py:104} INFO - [2022-02-18 20:55:29,821] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:55:29,830] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.087 seconds
+[2022-02-18 20:55:59,953] {scheduler_job.py:182} INFO - Started process (PID=4974) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:55:59,955] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:55:59,956] {logging_mixin.py:104} INFO - [2022-02-18 20:55:59,956] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:55:59,974] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:55:59,992] {logging_mixin.py:104} INFO - [2022-02-18 20:55:59,992] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:56:00,017] {logging_mixin.py:104} INFO - [2022-02-18 20:56:00,017] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:56:00,028] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.079 seconds
+[2022-02-18 20:56:30,156] {scheduler_job.py:182} INFO - Started process (PID=4979) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:56:30,159] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:56:30,160] {logging_mixin.py:104} INFO - [2022-02-18 20:56:30,159] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:56:30,182] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:56:30,201] {logging_mixin.py:104} INFO - [2022-02-18 20:56:30,201] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:56:30,225] {logging_mixin.py:104} INFO - [2022-02-18 20:56:30,225] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:56:30,235] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.084 seconds
+[2022-02-18 20:57:00,353] {scheduler_job.py:182} INFO - Started process (PID=4984) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:57:00,355] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:57:00,355] {logging_mixin.py:104} INFO - [2022-02-18 20:57:00,355] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:57:00,369] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:57:00,384] {logging_mixin.py:104} INFO - [2022-02-18 20:57:00,384] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:57:00,405] {logging_mixin.py:104} INFO - [2022-02-18 20:57:00,405] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:57:00,413] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.064 seconds
+[2022-02-18 20:57:30,566] {scheduler_job.py:182} INFO - Started process (PID=4989) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:57:30,567] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:57:30,569] {logging_mixin.py:104} INFO - [2022-02-18 20:57:30,568] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:57:30,585] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:57:30,604] {logging_mixin.py:104} INFO - [2022-02-18 20:57:30,604] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:57:30,629] {logging_mixin.py:104} INFO - [2022-02-18 20:57:30,629] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:57:30,638] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.077 seconds
+[2022-02-18 20:58:00,780] {scheduler_job.py:182} INFO - Started process (PID=4994) to work on /root/airflow/dags/matchup.py
+[2022-02-18 20:58:00,782] {scheduler_job.py:629} INFO - Processing file /root/airflow/dags/matchup.py for tasks to queue
+[2022-02-18 20:58:00,782] {logging_mixin.py:104} INFO - [2022-02-18 20:58:00,782] {dagbag.py:448} INFO - Filling up the DagBag from /root/airflow/dags/matchup.py
+[2022-02-18 20:58:00,805] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['matchup']) retrieved from /root/airflow/dags/matchup.py
+[2022-02-18 20:58:00,824] {logging_mixin.py:104} INFO - [2022-02-18 20:58:00,824] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-02-18 20:58:00,853] {logging_mixin.py:104} INFO - [2022-02-18 20:58:00,853] {dag.py:2273} INFO - Setting next_dagrun for matchup to 2022-02-18T18:00:00+00:00
+[2022-02-18 20:58:00,868] {scheduler_job.py:190} INFO - Processing /root/airflow/dags/matchup.py took 0.092 seconds

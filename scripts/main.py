@@ -31,16 +31,25 @@ def get_matchups(divisions = 'all'):
     cur.execute('select division from public.zone group by 1')
     divisions = cur.fetchall()
     divisions = list(itertools.chain.from_iterable(divisions))
-  
   for division in divisions:
     cur.execute('select country, probability from public.zone where division = %s group by 1, 2', (division,))
     query = cur.fetchall()
     country_list = [country[0] for country in query]
     probability_list = [round(float(country[1]), 3) for country in query]
-    choices = np.random.choice(country_list, size=2, replace=False, p=probability_list)
-    country1 = choices[0]
-    country2 = choices[1]
+    # We check the previous match up and test it below so we don't do the same matchup twice in a row
+    cur.execute('select country from data_fetched where match_id = (select max(match_id) from data_fetched where division = %s)', (division,))
+    previous_countries = cur.fetchall()
+    previous_countries = list(itertools.chain.from_iterable(previous_countries))    
+    while True:
+      choices = np.random.choice(country_list, size=2, replace=False, p=probability_list)
+      country1 = choices[0]
+      country2 = choices[1]
+      if collections.Counter(choices) == collections.Counter(previous_countries):
+        continue
+      else:
+        break
     get_data(division, country1, country2)
+    
 
 def get_zones(country):
    # First we get the zones for each country
@@ -58,12 +67,12 @@ def get_co2(country, division):
    for zone in zones_country:
      co2 = requests.get(f"https://api.electricitymap.org/v3/carbon-intensity/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
      country_co2_levels_raw.append(co2.get('carbonIntensity'))
-     if country_co2_levels_raw == None:
-       get_matchups(division)
+     if country_co2_levels_raw == None:     
+       get_matchups([division])
        return False
      production = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
      if production.get('error'):
-       get_matchups(division)
+       get_matchups([division])
        return False
      country_production_levels.append(production.get('powerProductionTotal'))
 
@@ -95,7 +104,7 @@ def get_mix(country, division):
     res = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
     production = res.get('powerProductionBreakdown')
     if production == None:
-      get_matchups(division)
+      get_matchups([division])
       return False
     mix['total_production'] += res.get('powerProductionTotal')
 
@@ -149,6 +158,11 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
     'Italy': '\U0001F1EE\U0001F1F9',
     'Denmark': '\U0001F1E9\U0001F1F0',
     'Hungary': '\U0001F1ED\U0001F1FA',
+    'Iceland': '\U0001F1EE\U0001F1F8',
+    'Belgium': '\U0001F1E7\U0001F1EA',
+    'Netherlands': '\U0001F1F3\U0001F1F1',
+    'Ireland': '\U0001F1EE\U0001F1EA',
+    'Poland': '\U0001F1F5\U0001F1F1',
     'co2_good': '\U0001F7E2',
     'co2_middle': '\U0001F7E0',
     'co2_bad': '\U0001F534'
