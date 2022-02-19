@@ -42,11 +42,11 @@ def get_matchups(divisions = 'all'):
     previous_countries = list(itertools.chain.from_iterable(previous_countries))    
     while True:
       choices = np.random.choice(country_list, size=2, replace=False, p=probability_list)
-      country1 = choices[0]
-      country2 = choices[1]
       if collections.Counter(choices) == collections.Counter(previous_countries):
         continue
       else:
+        country1 = choices[0]
+        country2 = choices[1]
         break
     get_data(division, country1, country2)
     
@@ -230,8 +230,7 @@ def get_data(division, country1, country2):
             )
             )
     conn.commit()
-    # We generate tweet
-    # \U0001F600
+
     send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_country2)
 
 
