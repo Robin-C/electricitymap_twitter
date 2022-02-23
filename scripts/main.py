@@ -48,10 +48,6 @@ def get_matchups(divisions = 'all'):
         country1 = choices[0]
         country2 = choices[1]
         break
-    print('---')  
-    print('sending...')    
-    print(division, country1, country2)
-    print('---')
     get_data(division, country1, country2)
     
 
@@ -62,7 +58,7 @@ def get_zones(country):
    zones_country = list(itertools.chain.from_iterable(zones_country))
    return zones_country
 
-def get_co2(country, division):
+def get_co2(country):
    zones_country = get_zones(country)
    country_co2_levels_raw = []
    country_co2_levels_cleaned = []
@@ -73,8 +69,6 @@ def get_co2(country, division):
      country_co2_levels_raw.append(co2.get('carbonIntensity'))
      production = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
      if country_co2_levels_raw == None or production.get('error'):
-       get_matchups([division])
-       print('problem here')
        return False
      country_production_levels.append(production.get('powerProductionTotal'))
 
@@ -84,7 +78,7 @@ def get_co2(country, division):
    co2 = round(sum(country_co2_levels_cleaned) / sum(country_production_levels))
    return co2
 
-def get_mix(country, division):
+def get_mix(country):
   zones_country = get_zones(country)
   mix = {
   'nuclear': 0,
@@ -106,7 +100,6 @@ def get_mix(country, division):
     res = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
     production = res.get('powerProductionBreakdown')
     if production == None:
-      get_matchups([division])
       return False
     mix['total_production'] += res.get('powerProductionTotal')
 
@@ -173,15 +166,16 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
   co2_country2_emoji = ''
   if 0 <= co2_country1 < 100:
     co2_country1_emoji = emoji_list['co2_good']
-  if 100 <= co2_country1 < 200:  
+  elif 100 <= co2_country1 < 200:  
     co2_country1_emoji = emoji_list['co2_middle']
-  if 200 <= co2_country1 <= 10000:  
+  else: 
     co2_country1_emoji = emoji_list['co2_bad']    
+
   if 0 <= co2_country2 < 100:
     co2_country2_emoji = emoji_list['co2_good']
-  if 100 <= co2_country2 < 200:  
+  elif 100 <= co2_country2 < 200:  
     co2_country2_emoji = emoji_list['co2_middle']
-  if 200 <= co2_country2 <= 10000:  
+  else:
     co2_country2_emoji = emoji_list['co2_bad']        
 
   country1_emoji = emoji_list[country1]
@@ -196,10 +190,10 @@ Provided by @electricitymap, CO2 is consumption while mix is about production. A
 """)
 
 def get_data(division, country1, country2):
-  co2_country1 = get_co2(country1, division)
-  co2_country2 = get_co2(country2, division)
-  mix_country1 = get_mix(country1, division)
-  mix_country2 = get_mix(country2, division)
+  co2_country1 = get_co2(country1)
+  co2_country2 = get_co2(country2)
+  mix_country1 = get_mix(country1)
+  mix_country2 = get_mix(country2)
   if co2_country1 and co2_country2 and mix_country1 and mix_country2:
     print(f'{country1}: CO2 {co2_country1}, mix {mix_country1}')
     print(f'{country2}: CO2 {co2_country2}, mix {mix_country2}')
@@ -232,8 +226,10 @@ def get_data(division, country1, country2):
             )
             )
     conn.commit()
-
     send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_country2)
+  else:
+    # it means we have at least 1 country with no value so we roll the matchup again
+    get_matchups([division])
 
 
 get_matchups()
