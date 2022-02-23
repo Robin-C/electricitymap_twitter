@@ -1,0 +1,45 @@
+[2022-02-21 18:30:28,197] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-02-21T18:30:23.179955+00:00 [queued]>
+[2022-02-21 18:30:28,204] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-02-21T18:30:23.179955+00:00 [queued]>
+[2022-02-21 18:30:28,204] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-21 18:30:28,204] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2022-02-21 18:30:28,204] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-21 18:30:28,214] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-02-21T18:30:23.179955+00:00
+[2022-02-21 18:30:28,218] {standard_task_runner.py:52} INFO - Started process 46245 to run task
+[2022-02-21 18:30:28,225] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-02-21T18:30:23.179955+00:00', '--job-id', '46', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmptddmjkd6', '--error-file', '/tmp/tmp1gv95ofo']
+[2022-02-21 18:30:28,225] {standard_task_runner.py:77} INFO - Job 46: Subtask run_script
+[2022-02-21 18:30:28,265] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-02-21T18:30:23.179955+00:00 [running]> on host 531edfb863fc
+[2022-02-21 18:30:28,297] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-21T18:30:23.179955+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-21T18:30:23.179955+00:00
+[2022-02-21 18:30:28,298] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-21 18:30:28,299] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-02-21 18:30:28,309] {bash.py:169} INFO - Output:
+[2022-02-21 18:30:31,832] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,832] {bash.py:173} INFO - sending...
+[2022-02-21 18:30:31,832] {bash.py:173} INFO - Southern Europe Spain Portugal
+[2022-02-21 18:30:31,832] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,832] {bash.py:173} INFO - Spain: CO2 121, mix [('solar', 10599, '31'), ('wind', 8675, '25'), ('nuclear', 7085, '20')]
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - Portugal: CO2 177, mix [('gas', 1252, '41'), ('solar', 738, '24'), ('wind', 576, '19')]
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - sending...
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - Northern Europe Denmark Norway
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - Denmark: CO2 136, mix [('wind', 5053, '75'), ('coal', 629, '9'), ('biomass', 574, '8')]
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - Norway: CO2 30, mix [('hydro', 18858, '88'), ('wind', 2001, '9'), ('hydro_discharge', 395, '2')]
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - sending...
+[2022-02-21 18:30:31,833] {bash.py:173} INFO - Central Europe Germany UK
+[2022-02-21 18:30:31,834] {bash.py:173} INFO - ---
+[2022-02-21 18:30:31,834] {bash.py:173} INFO - Germany: CO2 212, mix [('wind', 41903, '56'), ('coal', 13462, '18'), ('biomass', 5316, '7')]
+[2022-02-21 18:30:31,834] {bash.py:173} INFO - UK: CO2 177, mix [('wind', 12783, '39'), ('gas', 7949, '24'), ('nuclear', 4793, '15')]
+[2022-02-21 18:30:31,903] {bash.py:177} INFO - Command exited with return code 0
+[2022-02-21 18:30:31,924] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=matchup, task_id=run_script, execution_date=20220221T183023, start_date=20220221T183028, end_date=20220221T183031
+[2022-02-21 18:30:31,944] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-21 18:30:31,972] {local_task_job.py:146} INFO - Task exited with return code 0

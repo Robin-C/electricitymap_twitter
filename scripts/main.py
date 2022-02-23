@@ -48,6 +48,10 @@ def get_matchups(divisions = 'all'):
         country1 = choices[0]
         country2 = choices[1]
         break
+    print('---')  
+    print('sending...')    
+    print(division, country1, country2)
+    print('---')
     get_data(division, country1, country2)
     
 
@@ -67,12 +71,10 @@ def get_co2(country, division):
    for zone in zones_country:
      co2 = requests.get(f"https://api.electricitymap.org/v3/carbon-intensity/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
      country_co2_levels_raw.append(co2.get('carbonIntensity'))
-     if country_co2_levels_raw == None:     
-       get_matchups([division])
-       return False
      production = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
-     if production.get('error'):
+     if country_co2_levels_raw == None or production.get('error'):
        get_matchups([division])
+       print('problem here')
        return False
      country_production_levels.append(production.get('powerProductionTotal'))
 
@@ -190,7 +192,7 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
   
 {country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}
 
-Provided by @electricitymap, CO2 is consumption while mix is about production as of {timestamp_berlin} Berlin's time.
+Provided by @electricitymap, CO2 is consumption while mix is about production. As of {timestamp_berlin} Berlin's time.
 """)
 
 def get_data(division, country1, country2):

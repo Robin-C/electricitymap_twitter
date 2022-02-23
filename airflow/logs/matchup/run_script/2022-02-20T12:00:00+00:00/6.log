@@ -1,0 +1,2038 @@
+[2022-02-20 18:17:31,437] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-02-20T12:00:00+00:00 [queued]>
+[2022-02-20 18:17:31,446] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-02-20T12:00:00+00:00 [queued]>
+[2022-02-20 18:17:31,446] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-20 18:17:31,446] {taskinstance.py:1043} INFO - Starting attempt 6 of 6
+[2022-02-20 18:17:31,446] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-20 18:17:31,455] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-02-20T12:00:00+00:00
+[2022-02-20 18:17:31,459] {standard_task_runner.py:52} INFO - Started process 31747 to run task
+[2022-02-20 18:17:31,466] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-02-20T12:00:00+00:00', '--job-id', '33', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpn9dgsyrb', '--error-file', '/tmp/tmp9uloq9tx']
+[2022-02-20 18:17:31,466] {standard_task_runner.py:77} INFO - Job 33: Subtask run_script
+[2022-02-20 18:17:31,529] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-02-20T12:00:00+00:00 [running]> on host 531edfb863fc
+[2022-02-20 18:17:31,568] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-20T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-20T12:00:00+00:00
+[2022-02-20 18:17:31,569] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-20 18:17:31,570] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-02-20 18:17:31,581] {bash.py:169} INFO - Output:
+[2022-02-20 18:19:55,220] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,221] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,222] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,223] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,224] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,225] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,226] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,227] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,228] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,229] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,230] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,231] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,232] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,233] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,234] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,235] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,236] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,237] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,238] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,239] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,240] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,241] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,242] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,243] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,244] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,245] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,246] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,247] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,248] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,249] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,250] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,251] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,252] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,253] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,254] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,255] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,256] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,257] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,258] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,259] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,260] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,261] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,262] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,263] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,264] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,265] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,266] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,267] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,268] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,269] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,270] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,271] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,272] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,273] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,274] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,275] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,276] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,277] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,278] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,279] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,280] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,281] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,282] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,283] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,284] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,285] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,286] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,287] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,288] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,289] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,290] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,291] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,292] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,293] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,294] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,295] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,296] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,297] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,298] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,299] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,300] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,301] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,302] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,303] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,304] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,305] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,306] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,307] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,308] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,309] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,310] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,311] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,312] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,313] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,314] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,315] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,316] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,317] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,318] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,319] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,320] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,321] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,322] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,323] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,324] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,325] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,326] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,327] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,328] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,329] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,330] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,331] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,332] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,333] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,334] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,335] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,336] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,337] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,338] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,339] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,340] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,341] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,342] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,343] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,344] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,345] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,346] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,347] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,348] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,349] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,350] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,351] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,352] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,353] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,354] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,355] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,356] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,357] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,358] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,359] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,360] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     co2_country2 = get_co2(country2, division)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 75, in get_co2
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_matchups([division])
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-02-20 18:19:55,361] {bash.py:173} INFO -   File "/app/scripts/main.py", line 197, in get_data
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     co2_country1 = get_co2(country1, division)
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/scripts/main.py", line 68, in get_co2
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     co2 = requests.get(f"https://api.electricitymap.org/v3/carbon-intensity/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 76, in get
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     return request('get', url, params=params, **kwargs)
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     return session.request(method=method, url=url, **kwargs)
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     resp = self.send(prep, **send_kwargs)
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     r = adapter.send(request, **kwargs)
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     resp = conn.urlopen(
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -     httplib_response = self._make_request(
+[2022-02-20 18:19:55,362] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     six.raise_from(e, None)
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "<string>", line 3, in raise_from
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     httplib_response = conn.getresponse()
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     response.begin()
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 335, in begin
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     self.headers = self.msg = parse_headers(self.fp)
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 234, in parse_headers
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     return email.parser.Parser(_class=_class).parsestr(hstring)
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/parser.py", line 67, in parsestr
+[2022-02-20 18:19:55,363] {bash.py:173} INFO -     return self.parse(StringIO(text), headersonly=headersonly)
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/parser.py", line 56, in parse
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     feedparser.feed(data)
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 176, in feed
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     self._call_parse()
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 180, in _call_parse
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     self._parse()
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 256, in _parsegen
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     if self._cur.get_content_type() == 'message/delivery-status':
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/message.py", line 578, in get_content_type
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     value = self.get('content-type', missing)
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/message.py", line 471, in get
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -     return self.policy.header_fetch_parse(k, v)
+[2022-02-20 18:19:55,364] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/_policybase.py", line 316, in header_fetch_parse
+[2022-02-20 18:19:55,365] {bash.py:173} INFO -     return self._sanitize_header(name, value)
+[2022-02-20 18:19:55,365] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/_policybase.py", line 287, in _sanitize_header
+[2022-02-20 18:19:55,365] {bash.py:173} INFO -     if _has_surrogates(value):
+[2022-02-20 18:19:55,365] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/utils.py", line 57, in _has_surrogates
+[2022-02-20 18:19:55,365] {bash.py:173} INFO -     s.encode()
+[2022-02-20 18:19:55,365] {bash.py:173} INFO - RecursionError: maximum recursion depth exceeded while calling a Python object
+[2022-02-20 18:19:55,367] {bash.py:177} INFO - Command exited with return code 1
+[2022-02-20 18:19:55,381] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/app/env/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-02-20 18:19:55,385] {taskinstance.py:1496} INFO - Marking task as FAILED. dag_id=matchup, task_id=run_script, execution_date=20220220T120000, start_date=20220220T181731, end_date=20220220T181955
+[2022-02-20 18:19:55,454] {local_task_job.py:146} INFO - Task exited with return code 1
