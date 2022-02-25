@@ -67,10 +67,10 @@ def get_co2(country):
    for zone in zones_country:
      co2 = requests.get(f"https://api.electricitymap.org/v3/carbon-intensity/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
      country_co2_levels_raw.append(co2.get('carbonIntensity'))
-     production = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
-     if country_co2_levels_raw == None or production.get('error'):
+     res = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
+     if country_co2_levels_raw == None or res.get('error'):
        return False
-     country_production_levels.append(production.get('powerProductionTotal'))
+     country_production_levels.append(res.get('powerConsumptionTotal'))
 
    for co2_level, production_level in zip(country_co2_levels_raw, country_production_levels):
       country_co2_levels_cleaned.append(co2_level*production_level)
@@ -91,17 +91,17 @@ def get_mix(country):
   'gas': 0,
   'oil': 0,
   'unknown': 0,
-  'hydro_discharge': 0,
-  'battery_discharge': 0,
-  'total_production': 0
+  'hydro discharge': 0,
+  'battery discharge': 0,
+  'total_consumption': 0
   }
 
   for zone in zones_country:
     res = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
-    production = res.get('powerProductionBreakdown')
+    production = res.get('powerConsumptionBreakdown')
     if production == None:
       return False
-    mix['total_production'] += res.get('powerProductionTotal')
+    mix['total_consumption'] += res.get('powerConsumptionTotal')
 
    # We get mix details
     for keys in production:
@@ -126,16 +126,16 @@ def get_mix(country):
         if keys == 'unknown':
           mix['unknown'] += production.get(keys) if production.get(keys) is not None else 0                                                                            
         if keys == 'hydro discharge':
-          mix['hydro_discharge'] += production.get(keys) if production.get(keys) is not None else 0
+          mix['hydro discharge'] += production.get(keys) if production.get(keys) is not None else 0
         if keys == 'battery discharge':
-          mix['battery_discharge'] += production.get(keys) if production.get(keys) is not None else 0    
+          mix['battery discharge'] += production.get(keys) if production.get(keys) is not None else 0    
 
   # We get the top 3 energy sources for the country
   tups = collections.Counter(mix).most_common(4)
   top3 = []
   for tuple in tups:
-    if tuple[0] != 'total_production':
-      top3.append(tuple + (str(round(tuple[1] / mix['total_production']*100)),))
+    if tuple[0] != 'total_consumption':
+      top3.append(tuple + (str(round(tuple[1] / mix['total_consumption']*100)),))
 
   return top3
 
@@ -186,7 +186,7 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
   
 {country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}
 
-Provided by @electricitymap, CO2 is consumption while mix is about production. As of {timestamp_berlin} Berlin's time.
+Provided by @electricitymap, data is about live consumption as of {timestamp_berlin} Berlin's time.
 """)
 
 def get_data(division, country1, country2):
