@@ -1,0 +1,51 @@
+[2022-03-06 00:03:25,405] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-05T18:00:00+00:00 [queued]>
+[2022-03-06 00:03:25,412] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-05T18:00:00+00:00 [queued]>
+[2022-03-06 00:03:25,412] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-06 00:03:25,412] {taskinstance.py:1043} INFO - Starting attempt 4 of 6
+[2022-03-06 00:03:25,412] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-06 00:03:25,423] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-03-05T18:00:00+00:00
+[2022-03-06 00:03:25,427] {standard_task_runner.py:52} INFO - Started process 219257 to run task
+[2022-03-06 00:03:25,434] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-03-05T18:00:00+00:00', '--job-id', '159', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmp63vlymiu', '--error-file', '/tmp/tmp5ec3f69z']
+[2022-03-06 00:03:25,435] {standard_task_runner.py:77} INFO - Job 159: Subtask run_script
+[2022-03-06 00:03:25,470] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-03-05T18:00:00+00:00 [running]> on host 531edfb863fc
+[2022-03-06 00:03:25,506] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-05T18:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-05T18:00:00+00:00
+[2022-03-06 00:03:25,507] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-06 00:03:25,508] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-03-06 00:03:25,518] {bash.py:169} INFO - Output:
+[2022-03-06 00:03:29,410] {bash.py:173} INFO - Spain: CO2 171, mix [('nuclear', 8353, '31'), ('wind', 7308, '27'), ('gas', 6109, '22')]
+[2022-03-06 00:03:29,410] {bash.py:173} INFO - Portugal: CO2 231, mix [('gas', 2349, '38'), ('wind', 2131, '35'), ('nuclear', 547, '9')]
+[2022-03-06 00:03:29,410] {bash.py:173} INFO - Finland: CO2 174, mix [('nuclear', 3191, '34'), ('wind', 1917, '20'), ('hydro', 1507, '16')]
+[2022-03-06 00:03:29,410] {bash.py:173} INFO - Sweden: CO2 41, mix [('hydro', 5631, '32'), ('nuclear', 5470, '31'), ('wind', 4974, '28')]
+[2022-03-06 00:03:29,411] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in <module>
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -     get_matchups()
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -   File "/app/scripts/main.py", line 194, in get_data
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -     co2_country2 = get_co2(country2)
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -   File "/app/scripts/main.py", line 76, in get_co2
+[2022-03-06 00:03:29,411] {bash.py:173} INFO -     country_co2_levels_cleaned.append(co2_level*production_level)
+[2022-03-06 00:03:29,411] {bash.py:173} INFO - TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+[2022-03-06 00:03:29,458] {bash.py:177} INFO - Command exited with return code 1
+[2022-03-06 00:03:29,464] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/app/env/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-03-06 00:03:29,465] {taskinstance.py:1496} INFO - Marking task as UP_FOR_RETRY. dag_id=matchup, task_id=run_script, execution_date=20220305T180000, start_date=20220306T000325, end_date=20220306T000329
+[2022-03-06 00:03:29,505] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,2038 @@
+[2022-03-08 12:17:08,175] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-08T06:00:00+00:00 [queued]>
+[2022-03-08 12:17:08,183] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-08T06:00:00+00:00 [queued]>
+[2022-03-08 12:17:08,183] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-08 12:17:08,183] {taskinstance.py:1043} INFO - Starting attempt 3 of 6
+[2022-03-08 12:17:08,183] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-08 12:17:08,194] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-03-08T06:00:00+00:00
+[2022-03-08 12:17:08,199] {standard_task_runner.py:52} INFO - Started process 255178 to run task
+[2022-03-08 12:17:08,206] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-03-08T06:00:00+00:00', '--job-id', '218', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpfkj65_57', '--error-file', '/tmp/tmpac4oxxpa']
+[2022-03-08 12:17:08,207] {standard_task_runner.py:77} INFO - Job 218: Subtask run_script
+[2022-03-08 12:17:08,258] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-03-08T06:00:00+00:00 [running]> on host 531edfb863fc
+[2022-03-08 12:17:08,289] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-08T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-08T06:00:00+00:00
+[2022-03-08 12:17:08,289] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-08 12:17:08,290] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-03-08 12:17:08,300] {bash.py:169} INFO - Output:
+[2022-03-08 12:24:31,478] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,478] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,479] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,480] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,481] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,482] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,483] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,484] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,485] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,486] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,487] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,488] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,489] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,490] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,491] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,492] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,493] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,494] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,495] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,496] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,497] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,498] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,499] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,500] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,501] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,502] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,503] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,504] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,505] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,506] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,507] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,508] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,509] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,510] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,511] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,512] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,513] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,514] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,515] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,516] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,517] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,518] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,519] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,520] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,521] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,522] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,523] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,524] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,525] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,526] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,527] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,528] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,529] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,530] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,531] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,532] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,533] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,534] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,535] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,536] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,537] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,538] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,539] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,540] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,541] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,542] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,543] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,544] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,545] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,546] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,547] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,548] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,549] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,550] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,551] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,552] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,553] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,554] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,555] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,556] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,557] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,558] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,559] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,560] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,561] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,562] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,563] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,564] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,565] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,566] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,567] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,568] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,569] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,570] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,571] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,572] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,573] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,574] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,575] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,576] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,577] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,578] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,579] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,580] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,581] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,582] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,583] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,584] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,585] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,586] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,587] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,588] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,589] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,590] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,591] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,592] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,593] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,594] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,595] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,596] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,597] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,598] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,599] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,600] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,601] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/scripts/main.py", line 235, in get_data
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     VALUES(%s, %s, %s, %s, %s, %s, %s, \
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/scripts/main.py", line 196, in get_data
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     {country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/scripts/main.py", line 68, in get_co2
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     def get_co2(country):
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 76, in get
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     return request('get', url, params=params, **kwargs)
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -     return session.request(method=method, url=url, **kwargs)
+[2022-03-08 12:24:31,602] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     resp = self.send(prep, **send_kwargs)
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     r = adapter.send(request, **kwargs)
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     resp = conn.urlopen(
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     httplib_response = self._make_request(
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     six.raise_from(e, None)
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "<string>", line 3, in raise_from
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     httplib_response = conn.getresponse()
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+[2022-03-08 12:24:31,603] {bash.py:173} INFO -     response.begin()
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 335, in begin
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     self.headers = self.msg = parse_headers(self.fp)
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/http/client.py", line 234, in parse_headers
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     return email.parser.Parser(_class=_class).parsestr(hstring)
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/parser.py", line 67, in parsestr
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     return self.parse(StringIO(text), headersonly=headersonly)
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/parser.py", line 56, in parse
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     feedparser.feed(data)
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 176, in feed
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     self._call_parse()
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 180, in _call_parse
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     self._parse()
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/feedparser.py", line 295, in _parsegen
+[2022-03-08 12:24:31,604] {bash.py:173} INFO -     if self._cur.get_content_maintype() == 'message':
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/message.py", line 594, in get_content_maintype
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     ctype = self.get_content_type()
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/message.py", line 578, in get_content_type
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     value = self.get('content-type', missing)
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/message.py", line 471, in get
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     return self.policy.header_fetch_parse(k, v)
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/_policybase.py", line 316, in header_fetch_parse
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     return self._sanitize_header(name, value)
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/_policybase.py", line 287, in _sanitize_header
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     if _has_surrogates(value):
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/email/utils.py", line 57, in _has_surrogates
+[2022-03-08 12:24:31,605] {bash.py:173} INFO -     s.encode()
+[2022-03-08 12:24:31,605] {bash.py:173} INFO - RecursionError: maximum recursion depth exceeded while calling a Python object
+[2022-03-08 12:24:31,606] {bash.py:177} INFO - Command exited with return code 1
+[2022-03-08 12:24:31,616] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/app/env/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-03-08 12:24:31,619] {taskinstance.py:1496} INFO - Marking task as UP_FOR_RETRY. dag_id=matchup, task_id=run_script, execution_date=20220308T060000, start_date=20220308T121708, end_date=20220308T122431
+[2022-03-08 12:24:31,663] {local_task_job.py:146} INFO - Task exited with return code 1
