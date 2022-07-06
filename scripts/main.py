@@ -233,6 +233,7 @@ def get_data(division, country1, country2):
             )
     conn.commit()
     send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_country2)
+    
   else:
     # it means we have at least 1 country with no value so we roll the matchup again
     get_matchups([division])

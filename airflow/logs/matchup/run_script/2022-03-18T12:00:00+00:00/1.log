@@ -1,0 +1,45 @@
+[2022-03-18 18:00:03,446] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-18T12:00:00+00:00 [queued]>
+[2022-03-18 18:00:03,452] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-18T12:00:00+00:00 [queued]>
+[2022-03-18 18:00:03,452] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-18 18:00:03,452] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2022-03-18 18:00:03,452] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-18 18:00:03,459] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-03-18T12:00:00+00:00
+[2022-03-18 18:00:03,463] {standard_task_runner.py:52} INFO - Started process 400832 to run task
+[2022-03-18 18:00:03,467] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-03-18T12:00:00+00:00', '--job-id', '370', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpehmu0p_a', '--error-file', '/tmp/tmp6zgatbmb']
+[2022-03-18 18:00:03,468] {standard_task_runner.py:77} INFO - Job 370: Subtask run_script
+[2022-03-18 18:00:03,498] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-03-18T12:00:00+00:00 [running]> on host 531edfb863fc
+[2022-03-18 18:00:03,524] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-18T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-18T12:00:00+00:00
+[2022-03-18 18:00:03,524] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-18 18:00:03,525] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-03-18 18:00:03,533] {bash.py:169} INFO - Output:
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - Italy
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - 39477
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - Spain
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - 28891
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - Italy: CO2 375, mix [('gas', 19964, '51'), ('wind', 5234, '13'), ('coal', 3562, '9')]
+[2022-03-18 18:00:07,764] {bash.py:173} INFO - Spain: CO2 183, mix [('nuclear', 7464, '26'), ('gas', 7061, '24'), ('wind', 4822, '17')]
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Finland
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - 9732
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Denmark
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - 4238
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Finland: CO2 140, mix [('nuclear', 3630, '37'), ('hydro', 2232, '23'), ('wind', 1565, '16')]
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Denmark: CO2 211, mix [('hydro', 1006, '24'), ('wind', 967, '23'), ('biomass', 724, '17')]
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Germany
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - 57787
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - UK
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - 31982
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - Germany: CO2 369, mix [('coal', 19459, '34'), ('wind', 10629, '18'), ('solar', 8753, '15')]
+[2022-03-18 18:00:07,765] {bash.py:173} INFO - UK: CO2 209, mix [('gas', 10713, '33'), ('wind', 6528, '20'), ('nuclear', 6087, '19')]
+[2022-03-18 18:00:07,799] {bash.py:177} INFO - Command exited with return code 0
+[2022-03-18 18:00:07,812] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=matchup, task_id=run_script, execution_date=20220318T120000, start_date=20220318T180003, end_date=20220318T180007
+[2022-03-18 18:00:07,856] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-18 18:00:07,898] {local_task_job.py:146} INFO - Task exited with return code 0

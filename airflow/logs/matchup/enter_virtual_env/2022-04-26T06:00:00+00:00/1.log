@@ -1,0 +1,27 @@
+[2022-04-26 12:00:02,448] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.enter_virtual_env 2022-04-26T06:00:00+00:00 [queued]>
+[2022-04-26 12:00:02,455] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.enter_virtual_env 2022-04-26T06:00:00+00:00 [queued]>
+[2022-04-26 12:00:02,456] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-26 12:00:02,456] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-04-26 12:00:02,456] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-26 12:00:02,463] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): enter_virtual_env> on 2022-04-26T06:00:00+00:00
+[2022-04-26 12:00:02,466] {standard_task_runner.py:52} INFO - Started process 328192 to run task
+[2022-04-26 12:00:02,470] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'enter_virtual_env', '2022-04-26T06:00:00+00:00', '--job-id', '297', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmp2afxt0sd', '--error-file', '/tmp/tmpmk1l8lde']
+[2022-04-26 12:00:02,470] {standard_task_runner.py:77} INFO - Job 297: Subtask enter_virtual_env
+[2022-04-26 12:00:02,498] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.enter_virtual_env 2022-04-26T06:00:00+00:00 [running]> on host 193e33218975
+[2022-04-26 12:00:02,525] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=enter_virtual_env
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-26T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-26T06:00:00+00:00
+[2022-04-26 12:00:02,526] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-26 12:00:02,526] {bash.py:158} INFO - Running command: . /app/env/bin/activate
+[2022-04-26 12:00:02,531] {bash.py:169} INFO - Output:
+[2022-04-26 12:00:02,535] {bash.py:177} INFO - Command exited with return code 0
+[2022-04-26 12:00:02,549] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=matchup, task_id=enter_virtual_env, execution_date=20220426T060000, start_date=20220426T120002, end_date=20220426T120002
+[2022-04-26 12:00:02,583] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-26 12:00:02,601] {local_task_job.py:146} INFO - Task exited with return code 0

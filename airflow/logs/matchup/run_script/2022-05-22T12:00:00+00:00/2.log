@@ -1,0 +1,96 @@
+[2022-05-22 18:01:14,931] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-05-22T12:00:00+00:00 [queued]>
+[2022-05-22 18:01:14,937] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-05-22T12:00:00+00:00 [queued]>
+[2022-05-22 18:01:14,937] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-22 18:01:14,937] {taskinstance.py:1043} INFO - Starting attempt 2 of 6
+[2022-05-22 18:01:14,937] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-22 18:01:14,943] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-05-22T12:00:00+00:00
+[2022-05-22 18:01:14,946] {standard_task_runner.py:52} INFO - Started process 704793 to run task
+[2022-05-22 18:01:14,951] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-05-22T12:00:00+00:00', '--job-id', '959', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpnhlrohgr', '--error-file', '/tmp/tmpvzafq6lx']
+[2022-05-22 18:01:14,952] {standard_task_runner.py:77} INFO - Job 959: Subtask run_script
+[2022-05-22 18:01:14,977] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-05-22T12:00:00+00:00 [running]> on host 193e33218975
+[2022-05-22 18:01:14,992] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-22T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-22T12:00:00+00:00
+[2022-05-22 18:01:14,992] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-22 18:01:14,992] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-05-22 18:01:14,998] {bash.py:169} INFO - Output:
+[2022-05-22 18:01:25,222] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -     conn = connection.create_connection(
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -   File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2022-05-22 18:01:25,223] {bash.py:173} INFO - socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2022-05-22 18:01:25,223] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,223] {bash.py:173} INFO - During handling of the above exception, another exception occurred:
+[2022-05-22 18:01:25,223] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,223] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -     httplib_response = self._make_request(
+[2022-05-22 18:01:25,223] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -     self._validate_conn(conn)
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 978, in _validate_conn
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -     conn.connect()
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connection.py", line 309, in connect
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -     conn = self._new_conn()
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+[2022-05-22 18:01:25,224] {bash.py:173} INFO -     raise NewConnectionError(
+[2022-05-22 18:01:25,224] {bash.py:173} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f6dc49a8160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[2022-05-22 18:01:25,224] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,224] {bash.py:173} INFO - During handling of the above exception, another exception occurred:
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -     resp = conn.urlopen(
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -     retries = retries.increment(
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 446, in increment
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.electricitymap.org', port=443): Max retries exceeded with url: /v3/power-breakdown/latest?zone=GR (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6dc49a8160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - During handling of the above exception, another exception occurred:
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - 
+[2022-05-22 18:01:25,225] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-05-22 18:01:25,225] {bash.py:173} INFO -   File "/app/scripts/main.py", line 241, in <module>
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     get_matchups()
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 198, in get_data
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     co2_country1 = get_co2(country1)
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 73, in get_co2
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     country_consumption_total = get_total_consumption(country)
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/scripts/main.py", line 65, in get_total_consumption
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     res = requests.get(f"https://api.electricitymap.org/v3/power-breakdown/latest?zone={zone}", headers={'auth-token':electricitymap_token}).json()
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 76, in get
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     return request('get', url, params=params, **kwargs)
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/api.py", line 61, in request
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     return session.request(method=method, url=url, **kwargs)
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+[2022-05-22 18:01:25,226] {bash.py:173} INFO -     resp = self.send(prep, **send_kwargs)
+[2022-05-22 18:01:25,227] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+[2022-05-22 18:01:25,227] {bash.py:173} INFO -     r = adapter.send(request, **kwargs)
+[2022-05-22 18:01:25,227] {bash.py:173} INFO -   File "/app/env/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+[2022-05-22 18:01:25,227] {bash.py:173} INFO -     raise ConnectionError(e, request=request)
+[2022-05-22 18:01:25,227] {bash.py:173} INFO - requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.electricitymap.org', port=443): Max retries exceeded with url: /v3/power-breakdown/latest?zone=GR (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6dc49a8160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2022-05-22 18:01:25,250] {bash.py:177} INFO - Command exited with return code 1
+[2022-05-22 18:01:25,258] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/app/env/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-05-22 18:01:25,260] {taskinstance.py:1496} INFO - Marking task as UP_FOR_RETRY. dag_id=matchup, task_id=run_script, execution_date=20220522T120000, start_date=20220522T180114, end_date=20220522T180125
+[2022-05-22 18:01:25,294] {local_task_job.py:146} INFO - Task exited with return code 1

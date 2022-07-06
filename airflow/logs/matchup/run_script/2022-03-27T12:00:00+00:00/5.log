@@ -1,0 +1,61 @@
+[2022-03-27 18:04:17,782] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-27T12:00:00+00:00 [queued]>
+[2022-03-27 18:04:17,786] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-27T12:00:00+00:00 [queued]>
+[2022-03-27 18:04:17,786] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-27 18:04:17,786] {taskinstance.py:1043} INFO - Starting attempt 5 of 6
+[2022-03-27 18:04:17,786] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-27 18:04:17,793] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-03-27T12:00:00+00:00
+[2022-03-27 18:04:17,796] {standard_task_runner.py:52} INFO - Started process 529117 to run task
+[2022-03-27 18:04:17,803] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-03-27T12:00:00+00:00', '--job-id', '520', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpndp050qr', '--error-file', '/tmp/tmprhp0om5a']
+[2022-03-27 18:04:17,803] {standard_task_runner.py:77} INFO - Job 520: Subtask run_script
+[2022-03-27 18:04:17,828] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-03-27T12:00:00+00:00 [running]> on host 531edfb863fc
+[2022-03-27 18:04:17,843] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-27T12:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-27T12:00:00+00:00
+[2022-03-27 18:04:17,843] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-27 18:04:17,844] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-03-27 18:04:17,849] {bash.py:169} INFO - Output:
+[2022-03-27 18:04:19,812] {bash.py:173} INFO - Spain
+[2022-03-27 18:04:19,812] {bash.py:173} INFO - 22298
+[2022-03-27 18:04:19,812] {bash.py:173} INFO - Portugal
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - 4470
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Spain: CO2 143, mix [('solar', 6073, '27'), ('nuclear', 4934, '22'), ('gas', 4418, '20')]
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Portugal: CO2 187, mix [('wind', 1370, '31'), ('gas', 1279, '29'), ('solar', 522, '12')]
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Sweden
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - 16605
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Finland
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - 9592
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Sweden: CO2 33, mix [('wind', 5991, '36'), ('nuclear', 5261, '32'), ('hydro', 4213, '25')]
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Finland: CO2 137, mix [('nuclear', 3676, '38'), ('wind', 2282, '24'), ('hydro', 1294, '13')]
+[2022-03-27 18:04:19,813] {bash.py:173} INFO - Traceback (most recent call last):
+[2022-03-27 18:04:19,813] {bash.py:173} INFO -   File "/app/scripts/main.py", line 241, in <module>
+[2022-03-27 18:04:19,813] {bash.py:173} INFO -     get_matchups()
+[2022-03-27 18:04:19,813] {bash.py:173} INFO -   File "/app/scripts/main.py", line 51, in get_matchups
+[2022-03-27 18:04:19,813] {bash.py:173} INFO -     get_data(division, country1, country2)
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -   File "/app/scripts/main.py", line 199, in get_data
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -     co2_country2 = get_co2(country2)
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -   File "/app/scripts/main.py", line 73, in get_co2
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -     country_consumption_total = get_total_consumption(country)
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -   File "/app/scripts/main.py", line 66, in get_total_consumption
+[2022-03-27 18:04:19,814] {bash.py:173} INFO -     country_consumption_total.append(sum(res.get('powerConsumptionBreakdown').values()))
+[2022-03-27 18:04:19,814] {bash.py:173} INFO - AttributeError: 'NoneType' object has no attribute 'values'
+[2022-03-27 18:04:19,844] {bash.py:177} INFO - Command exited with return code 1
+[2022-03-27 18:04:19,852] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/app/env/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/app/env/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-03-27 18:04:19,853] {taskinstance.py:1496} INFO - Marking task as UP_FOR_RETRY. dag_id=matchup, task_id=run_script, execution_date=20220327T120000, start_date=20220327T180417, end_date=20220327T180419
+[2022-03-27 18:04:19,897] {local_task_job.py:146} INFO - Task exited with return code 1

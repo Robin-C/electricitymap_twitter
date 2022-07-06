@@ -1,0 +1,47 @@
+[2022-03-16 00:00:03,744] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-15T18:00:00+00:00 [queued]>
+[2022-03-16 00:00:03,748] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: matchup.run_script 2022-03-15T18:00:00+00:00 [queued]>
+[2022-03-16 00:00:03,749] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-16 00:00:03,749] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2022-03-16 00:00:03,749] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-16 00:00:03,757] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): run_script> on 2022-03-15T18:00:00+00:00
+[2022-03-16 00:00:03,760] {standard_task_runner.py:52} INFO - Started process 361715 to run task
+[2022-03-16 00:00:03,766] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'matchup', 'run_script', '2022-03-15T18:00:00+00:00', '--job-id', '329', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/matchup.py', '--cfg-path', '/tmp/tmpd_r2a3_5', '--error-file', '/tmp/tmpwufvfhr7']
+[2022-03-16 00:00:03,767] {standard_task_runner.py:77} INFO - Job 329: Subtask run_script
+[2022-03-16 00:00:03,796] {logging_mixin.py:104} INFO - Running <TaskInstance: matchup.run_script 2022-03-15T18:00:00+00:00 [running]> on host 531edfb863fc
+[2022-03-16 00:00:03,822] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=r.chesne@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Robin
+AIRFLOW_CTX_DAG_ID=matchup
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T18:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T18:00:00+00:00
+[2022-03-16 00:00:03,822] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-16 00:00:03,823] {bash.py:158} INFO - Running command: python /app/scripts/main.py
+[2022-03-16 00:00:03,831] {bash.py:169} INFO - Output:
+[2022-03-16 00:00:08,743] {bash.py:173} INFO - Italy
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - 33773
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - Spain
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - 29014
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - Italy: CO2 440, mix [('gas', 22281, '66'), ('unknown', 2712, '8'), ('coal', 2357, '7')]
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - Spain: CO2 176, mix [('wind', 10759, '37'), ('gas', 6943, '24'), ('nuclear', 5420, '19')]
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - Finland
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - 9336
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - Norway
+[2022-03-16 00:00:08,744] {bash.py:173} INFO - 17207
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - Finland: CO2 169, mix [('nuclear', 3439, '37'), ('wind', 1823, '20'), ('hydro', 1378, '15')]
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - Norway: CO2 28, mix [('hydro', 15526, '90'), ('wind', 1090, '6'), ('hydro discharge', 268, '2')]
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - UK
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - 33542
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - Germany
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - 50870
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - UK: CO2 269, mix [('gas', 15198, '45'), ('wind', 7948, '24'), ('nuclear', 5475, '16')]
+[2022-03-16 00:00:08,745] {bash.py:173} INFO - Germany: CO2 499, mix [('coal', 22793, '45'), ('gas', 9597, '19'), ('wind', 5455, '11')]
+[2022-03-16 00:00:08,784] {bash.py:177} INFO - Command exited with return code 0
+[2022-03-16 00:00:08,799] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=matchup, task_id=run_script, execution_date=20220315T180000, start_date=20220316T000003, end_date=20220316T000008
+[2022-03-16 00:00:08,814] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-16 00:00:08,818] {local_task_job.py:187} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-03-16 00:00:08,819] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 361715
+[2022-03-16 00:00:08,819] {process_utils.py:66} INFO - Process psutil.Process(pid=361715, status='terminated', exitcode=0, started='00:00:03') (361715) terminated with exit code 0
