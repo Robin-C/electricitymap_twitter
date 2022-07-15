@@ -191,7 +191,7 @@ def send_tweet(country1, country2, co2_country1,co2_country2, mix_country1, mix_
   
 {country2_emoji} {country2.upper()}: {co2_country2}g CO2/kWh {co2_country2_emoji} using {mix_country2[0][2]}% {mix_country2[0][0].capitalize()}, {mix_country2[1][2]}% {mix_country2[1][0].capitalize()} and {mix_country2[2][2]}% {mix_country2[2][0].capitalize()}
 
-Provided by @electricitymap, data is about live consumption as of {timestamp_berlin} Berlin's time.
+Provided by @ElectricityMaps, data is about live consumption as of {timestamp_berlin} Berlin's time.
 """)
 
 def get_data(division, country1, country2):
