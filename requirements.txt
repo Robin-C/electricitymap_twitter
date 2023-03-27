@@ -9,3 +9,8 @@ requests==2.27.1
 requests-oauthlib==1.3.1
 tweepy==4.5.0
 urllib3==1.26.8
+numpy==1.24.2
+pandas==1.5.3
+python-dateutil==2.8.2
+pytz==2023.2
+six==1.16.0
