@@ -2,6 +2,7 @@ version: '3.1'
 services:
   bot:
     image: python:3.8-slim
+    container_name: script
     environment:
       - AUTH_ELECTRICITYMAP=${AUTH_ELECTRICITYMAP}
       - TWEETER_BEARER_TOKEN=${TWEETER_BEARER_TOKEN}
@@ -11,4 +12,4 @@ services:
       - TWEETER_ACCESS_TOKEN_SECRET=${TWEETER_ACCESS_TOKEN_SECRET}
     volumes:
       - ./:/app
-    command: tail -f /dev/null
+    command: sh -c "cd /app && pip install -r requirements.txt && cd /app/scripts && python run.py"
