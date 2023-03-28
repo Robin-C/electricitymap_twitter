@@ -1,2 +1,81 @@
-def send_tweet():
-    
+import datetime
+import os
+import pytz
+import datetime
+import tweepy
+from collections import defaultdict
+
+
+# Twitter set up
+access_token_secret = os.getenv("TWEETER_ACCESS_TOKEN_SECRET")
+access_token = os.getenv("TWEETER_ACCESS_TOKEN")
+consumer_key = os.getenv("TWEETER_CONSUMMER_KEY")
+consumer_secret = os.getenv("TWEETER_CONSUMMER_SECRET")
+
+
+emoji_list = {
+    "Sweden": "\U0001F1F8\U0001F1EA",
+    "Portugal": "\U0001F1F5\U0001F1F9",
+    "Germany": "\U0001F1E9\U0001F1EA",
+    "Greece": "\U0001F1EC\U0001F1F7",
+    "Norway": "\U0001F1F3\U0001F1F4",
+    "Finland": "\U0001F1EB\U0001F1EE",
+    "France": "\U0001F1EB\U0001F1F7",
+    "UK": "\U0001F1EC\U0001F1E7",
+    "Spain": "\U0001F1EA\U0001F1F8",
+    "Italy": "\U0001F1EE\U0001F1F9",
+    "Danemark": "\U0001F1E9\U0001F1F0",
+    "Hungary": "\U0001F1ED\U0001F1FA",
+    "Iceland": "\U0001F1EE\U0001F1F8",
+    "Belgium": "\U0001F1E7\U0001F1EA",
+    "Netherlands": "\U0001F1F3\U0001F1F1",
+    "Ireland": "\U0001F1EE\U0001F1EA",
+    "Poland": "\U0001F1F5\U0001F1F1",
+    "co2_good": "\U0001F7E2",
+    "co2_middle": "\U0001F7E0",
+    "co2_bad": "\U0001F534",
+}
+
+
+def send_tweet(data):
+    client = tweepy.Client(
+        consumer_key=consumer_key,
+        consumer_secret=consumer_secret,
+        access_token=access_token,
+        access_token_secret=access_token_secret,
+    )
+    data_tweet = defaultdict(list)
+    for country in data:
+        country_name = country['country']
+        # Country name
+        data_tweet['country_name'].append(country_name)
+        # CO2 emoji
+        if 0 <= country['co2'] < 100:
+            data_tweet['co2_emoji'].append(emoji_list["co2_good"]) 
+        elif 100 <= country['co2'] < 200:
+            data_tweet['co2_emoji'].append(emoji_list["co2_middle"])
+        else:
+            data_tweet['co2_emoji'].append(emoji_list["co2_bad"])
+        # CO2 number
+        data_tweet['co2_number'].append(country['co2'])
+        # Country emoji
+        data_tweet['country_emoji'].append(emoji_list[country_name])
+        # Top 3 mix
+        data_tweet['top3'].append(country['top3'])
+
+    # Write tweet
+    tz = pytz.timezone("Europe/Berlin")
+    timestamp_berlin = datetime.datetime.now(tz).strftime("%d/%m/%y %H:%M")
+    text=f"""{data_tweet['country_emoji'][0]} {data_tweet['country_name'][0].upper()}: {data_tweet['co2_number'][0]}g CO2/kWh {data_tweet['co2_emoji'][0]} \
+using {data_tweet['top3'][0][0][2]}% {data_tweet['top3'][0][0][0].capitalize()}, \
+{data_tweet['top3'][0][1][2]}% {data_tweet['top3'][0][1][0].capitalize()} \
+and {data_tweet['top3'][0][2][2]}% {data_tweet['top3'][0][2][0].capitalize()}.
+
+{data_tweet['country_emoji'][1]} {data_tweet['country_name'][1].upper()}: {data_tweet['co2_number'][1]}g CO2/kWh {data_tweet['co2_emoji'][1]} \
+using {data_tweet['top3'][1][0][2]}% {data_tweet['top3'][1][0][0].capitalize()}, \
+{data_tweet['top3'][1][1][2]}% {data_tweet['top3'][1][1][0].capitalize()} \
+and {data_tweet['top3'][1][2][2]}% {data_tweet['top3'][1][2][0].capitalize()}.
+
+Provided by @ElectricityMaps, data is about live consumption as of {timestamp_berlin} Berlin's time.
+"""
+    client.create_tweet(text=text)

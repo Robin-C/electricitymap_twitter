@@ -1,21 +1,29 @@
 from utils.get_matchup import get_matchup
 from utils.get_data import get_data
+from utils.send_tweet import send_tweet
+import pandas as pd
+from os import getcwd
 
-class Comparaison():
+class Comparaison:
     def __init__(self, division):
         self.division = division
-    
+
     def get_matchup_method(self):
         self.zones = get_matchup(self.division)
 
     def get_data_method(self):
-        get_data(self.zones)
+        self.data = get_data(self.zones)
 
     def send_tweet_method(self):
-        print('ok')
+        send_tweet(self.data)
 
 
 if __name__ == "__main__":
-    test = Comparaison('Northern Europe')
-    test.get_matchup_method()
-    test.get_data_method()
+    wdb = getcwd()
+    df = pd.read_csv(f"{wdb}/utils/zones.csv")
+    divisions = pd.unique(df['division'])
+    for division in divisions:
+        comparaison = Comparaison(division)
+        comparaison.get_matchup_method()
+        comparaison.get_data_method()
+        comparaison.send_tweet_method()
