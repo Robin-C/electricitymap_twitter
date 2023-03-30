@@ -1,6 +1,6 @@
 # What does this repo do?
 
-The code tweets every 6 hours [here](https://twitter.com/european_grid) a comparaison for 2 countries of their electricity mix.
+The code tweets every 6 hours [here](https://twitter.com/european_grid) a comparaison between 2 countries of their electricity mix.
 
 
 
