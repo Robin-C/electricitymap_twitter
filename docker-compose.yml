@@ -10,6 +10,10 @@ services:
       - TWEETER_CONSUMMER_SECRET=${TWEETER_CONSUMMER_SECRET}
       - TWEETER_ACCESS_TOKEN=${TWEETER_ACCESS_TOKEN}
       - TWEETER_ACCESS_TOKEN_SECRET=${TWEETER_ACCESS_TOKEN_SECRET}
+    depends_on:
+      - db      
     volumes:
       - ./:/app
     command: sh -c "cd /app && pip install -r requirements.txt && cd /app/scripts && python run.py"
+  db:
+    image: postgres:13.11
