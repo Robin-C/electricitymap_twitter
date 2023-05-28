@@ -65,7 +65,30 @@ def send_tweet(data):
 
     # Write tweet
     tz = pytz.timezone("Europe/Berlin")
-    timestamp_berlin = datetime.datetime.now(tz).strftime("%d/%m/%y %H:%M")
+    ts = datetime.datetime.now(tz)
+    timestamp_berlin = ts.strftime("%d/%m/%y %H:%M")
+    ts_unix = int(round(ts.timestamp()))
+    country_1 = {"country": data_tweet['country_name'][0].upper()
+                 , "ts": ts_unix
+                 , "co2": data_tweet['co2_number'][0]
+                 , "way_1": data_tweet['top3'][0][0][0].capitalize()
+                 , "way_1_pc": data_tweet['top3'][0][1][2]
+                 , "way_2": data_tweet['top3'][0][1][0].capitalize()
+                 , "way_2_pc": data_tweet['top3'][0][1][2]
+                 , "way_3": data_tweet['top3'][0][2][0].capitalize()
+                 , "way_3_pc": data_tweet['top3'][0][2][2]
+                 }
+    country_2 = {"country": data_tweet['country_name'][1].upper()
+                 , "ts": ts_unix
+                 , "co2": data_tweet['co2_number'][1]
+                 , "way_1": data_tweet['top3'][1][0][0].capitalize()
+                 , "way_1_pc": data_tweet['top3'][1][1][2]
+                 , "way_2": data_tweet['top3'][1][1][0].capitalize()
+                 , "way_2_pc": data_tweet['top3'][1][1][2]
+                 , "way_3": data_tweet['top3'][1][2][0].capitalize()
+                 , "way_3_pc": data_tweet['top3'][1][2][2]
+                 }    
+
     text=f"""{data_tweet['country_emoji'][0]} {data_tweet['country_name'][0].upper()}: {data_tweet['co2_number'][0]}g CO2/kWh {data_tweet['co2_emoji'][0]} \
 using {data_tweet['top3'][0][0][2]}% {data_tweet['top3'][0][0][0].capitalize()}, \
 {data_tweet['top3'][0][1][2]}% {data_tweet['top3'][0][1][0].capitalize()} \
@@ -79,3 +102,4 @@ and {data_tweet['top3'][1][2][2]}% {data_tweet['top3'][1][2][0].capitalize()}.
 Provided by @ElectricityMaps, data is about live consumption as of {timestamp_berlin} Berlin's time.
 """
     client.create_tweet(text=text)
+    return {"country_1": country_1, "country_2": country_2}
