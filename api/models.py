@@ -11,21 +11,36 @@ class EntryBase(SQLModel):
     matchup: int
     co2: int
     way_1: str
-    way_1_pc: condecimal(max_digits=5, decimal_places=2) = Field(default=0)
+    way_1_pc: int
     way_2: str
-    way_2_pc: condecimal(max_digits=5, decimal_places=2) = Field(default=0)
+    way_2_pc: int
     way_3: str
     way_3_pc: int
+    tweet_id: str
 
 class Entry(EntryBase, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
+
 
 class EntryCreate(EntryBase):
     pass
 
 class SingleEntry(SQLModel):
     matchup: Optional[int] = Field(default=0)
-  
+
+class EntryRead(SQLModel):
+    id: int
+    country: str
+    ts: str
+    matchup: int
+    co2: int
+    way_1: str
+    way_1_pc: int
+    way_2: str
+    way_2_pc: int
+    way_3: str
+    way_3_pc: int
+    tweet_url: str
 
 sqlite_file_name = "database.db"
 sqlite_url = f"sqlite:///{sqlite_file_name}"

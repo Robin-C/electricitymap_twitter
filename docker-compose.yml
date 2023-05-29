@@ -14,13 +14,12 @@ services:
       - api      
     volumes:
       - ./:/app
-   # command: sh -c "cd /app/scripts && pip install -r requirements.txt && cd /app/scripts && python run.py"
+    # command: sh -c "cd /app/scripts && pip install -r requirements.txt && cd /app/scripts && python run.py"
     command: "tail -f /dev/null"
   api:
     image: python:3.8-slim
     container_name: api
-    command: sh -c "cd /api && pip install -r requirements.txt && uvicorn main:app --reload --host 0.0.0.0 --port 8000"²
-    #"tail -f /dev/null"
+    command: sh -c "cd /api && pip install -r requirements.txt && uvicorn main:app --reload --host 0.0.0.0 --port 8000"
     volumes:
       - ./api:/api
     ports:

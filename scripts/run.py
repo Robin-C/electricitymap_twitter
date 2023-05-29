@@ -39,9 +39,10 @@ class Comparaison:
                 , "way_2": data.get('way_2')
                 , "way_2_pc": data.get('way_2_pc')
                 , "way_3": data.get('way_3')
-                , "way_3_pc": data.get('way_3_pc')                                
+                , "way_3_pc": data.get('way_3_pc')
+                , "tweet_id": data.get('tweet_id')                            
             }
-            r =requests.post(url=post_url, json=payload, headers={"Content-Type":"application/json"})
+            requests.post(url=post_url, json=payload, headers={"Content-Type":"application/json"})
 
 if __name__ == "__main__":
     wdb = getcwd()

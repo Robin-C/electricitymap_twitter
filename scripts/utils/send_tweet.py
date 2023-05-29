@@ -72,7 +72,7 @@ def send_tweet(data):
                  , "ts": ts_unix
                  , "co2": data_tweet['co2_number'][0]
                  , "way_1": data_tweet['top3'][0][0][0].capitalize()
-                 , "way_1_pc": data_tweet['top3'][0][1][2]
+                 , "way_1_pc": data_tweet['top3'][0][0][2]
                  , "way_2": data_tweet['top3'][0][1][0].capitalize()
                  , "way_2_pc": data_tweet['top3'][0][1][2]
                  , "way_3": data_tweet['top3'][0][2][0].capitalize()
@@ -82,7 +82,7 @@ def send_tweet(data):
                  , "ts": ts_unix
                  , "co2": data_tweet['co2_number'][1]
                  , "way_1": data_tweet['top3'][1][0][0].capitalize()
-                 , "way_1_pc": data_tweet['top3'][1][1][2]
+                 , "way_1_pc": data_tweet['top3'][1][0][2]
                  , "way_2": data_tweet['top3'][1][1][0].capitalize()
                  , "way_2_pc": data_tweet['top3'][1][1][2]
                  , "way_3": data_tweet['top3'][1][2][0].capitalize()
@@ -101,5 +101,8 @@ and {data_tweet['top3'][1][2][2]}% {data_tweet['top3'][1][2][0].capitalize()}.
 
 Provided by @ElectricityMaps, data is about live consumption as of {timestamp_berlin} Berlin's time.
 """
-    client.create_tweet(text=text)
+    r = client.create_tweet(text=text)
+    r = r._asdict()
+    country_1['tweet_id'] = r['data']['id']
+    country_2['tweet_id'] = r['data']['id']
     return {"country_1": country_1, "country_2": country_2}
