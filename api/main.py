@@ -1,4 +1,4 @@
-from fastapi import Depends, FastAPI, Request, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query 
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select, func
 from sqlalchemy.orm import aliased
@@ -7,10 +7,24 @@ import ciso8601
 import time
 from datetime import datetime, time as dttime
 from typing import Union, List, Optional
+from typing_extensions import Annotated
 
-from models import create_db, get_session, Entry, SingleEntry, EntryCreate, EntryRead, MatchupRead
+from models import create_db, get_session, Entry, SingleEntry, EntryCreate, EntryRead, MatchupRead, CountriesIn
 
-app = FastAPI()
+description = """
+This API allows anyone to get data about specific countries or specific matchups:
+
+* **/pastentries** allows you to get information about a specific country (or all countries if left empty)
+* **/pastmatchupdetails** allows you to get information about a specific matchup
+
+See documentation below for more information
+"""
+
+app = FastAPI(title="Eurogrid Carbon Intensity API",
+              description=description,
+              version="0.1",
+              contact={"name": "Robin CHESNE",
+                       "email":"r.chesne@gmail.com"})
 
 origins = ["*"]
 
@@ -41,7 +55,11 @@ def post_entry(entry: EntryCreate, session: Session = Depends(get_session)):
     return entry
 
 @app.get("/pastentries", response_model=List[EntryRead])
-def get_past_data(dateFrom: str, dateTo: str, session: Session = Depends(get_session), country: Optional[str] = None):
+def get_past_entries(
+    dateFrom: str = Query(description="Date to start from using yyyy-mm-dd format", example="2023-01-17")
+    , dateTo: str = Query(description="Date to end at using yyyy-mm-dd format", example="2024-01-17")   
+    , session: Session = Depends(get_session)
+    , country: Optional[CountriesIn] = None):
     # Data validation could be done in a model instead
     try:
         dateFromTs = time.mktime(datetime.combine(ciso8601.parse_datetime(dateFrom).date(), dttime(1,1)).timetuple()) # turn str param into unix ts
@@ -95,10 +113,14 @@ def get_past_data(dateFrom: str, dateTo: str, session: Session = Depends(get_ses
     return list
 
 @app.get("/pastmatchupdetails/{country1}/{country2}", response_model=List[MatchupRead])
-def get_past_matchup(country1: str, country2: str, dateFrom: str, dateTo: str, session: Session = Depends(get_session)):
-    allowed_countries = ['FRANCE', 'GERMANY', 'UK', 'HUNGARY', 'DANEMARK', 'NORWAY', 'SWEDEN', 'FINLAND', 'GREECE', 'PORTUGAL', 'ITALY', 'SPAIN']
-    if country1 not in allowed_countries or country2 not in allowed_countries:
-        raise HTTPException(status_code=422, detail="One or both countries not one of 'FRANCE', 'GERMANY', 'UK', 'HUNGARY', 'DANEMARK', 'NORWAY', 'SWEDEN', 'FINLAND', 'GREECE', 'PORTUGAL', 'ITALY', 'SPAIN'")
+def get_past_matchups(
+      country1: CountriesIn
+    , country2: CountriesIn
+    , dateFrom: str = Query(description="Date to start from using yyyy-mm-dd format", example="2023-01-17")
+    , dateTo: str = Query(description="Date to end at using yyyy-mm-dd format", example="2024-01-17")    
+    , session: Session = Depends(get_session)
+):
+
     try:
         dateFromTs = time.mktime(datetime.combine(ciso8601.parse_datetime(dateFrom).date(), dttime(1,1)).timetuple()) # turn str param into unix ts
         dateToTs = time.mktime(datetime.combine(ciso8601.parse_datetime(dateTo).date(), dttime(23,59)).timetuple())
