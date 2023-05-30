@@ -1,16 +1,20 @@
 import pandas as pd
+import os
 from os import getcwd
 import requests
 import time
-
 from utils.get_matchup import get_matchup
 from utils.get_data import get_data
 from utils.send_tweet import send_tweet
 
+SAVE_TWEETS = os.environ.get('SAVE_TWEETS', False)
+API_IP = os.environ.get('API_IP', None)
+API_PORT = os.environ.get('API_PORT', None)
+
 class Comparaison:
     def __init__(self, division):
         self.division = division
-        self.url = "http://api:8000"
+        self.url = f"http://{API_IP}:{API_PORT}"
         self.lastest_endpoint = "/getlatestmatchup"
         self.post = "/entry"
 
@@ -53,4 +57,5 @@ if __name__ == "__main__":
         comparaison.get_matchup_method()
         comparaison.get_data_method()
         comparaison.send_tweet_method()
-        comparaison.save_entry()
+        if SAVE_TWEETS:
+            comparaison.save_entry()

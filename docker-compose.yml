@@ -3,24 +3,9 @@ services:
   bot:
     image: python:3.8-slim
     container_name: script
-    environment:
-      - AUTH_ELECTRICITYMAP=${AUTH_ELECTRICITYMAP}
-      - TWEETER_BEARER_TOKEN=${TWEETER_BEARER_TOKEN}
-      - TWEETER_CONSUMMER_KEY=${TWEETER_CONSUMMER_KEY}
-      - TWEETER_CONSUMMER_SECRET=${TWEETER_CONSUMMER_SECRET}
-      - TWEETER_ACCESS_TOKEN=${TWEETER_ACCESS_TOKEN}
-      - TWEETER_ACCESS_TOKEN_SECRET=${TWEETER_ACCESS_TOKEN_SECRET}
-    depends_on:
-      - api      
+    env_file:
+      - .env
     volumes:
       - ./:/app
     command: sh -c "cd /app/scripts && pip install -r requirements.txt && cd /app/scripts && python run.py"
     # command: "tail -f /dev/null"
-  api:
-    image: python:3.8-slim
-    container_name: api
-    command: sh -c "cd /api && pip install -r requirements.txt && uvicorn main:app --reload --host 0.0.0.0 --port 8000"
-    volumes:
-      - ./api:/api
-    ports:
-      - 8080:8000
