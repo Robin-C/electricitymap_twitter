@@ -42,6 +42,31 @@ class EntryRead(SQLModel):
     way_3_pc: int
     tweet_url: str
 
+class MatchupRead(SQLModel):
+    ts: str
+    tweet_url: str
+    matchup: int
+    id_entry_c1: int
+    country_1: str
+    co2_c1: int
+    way_1_c1: str
+    way_1_pc_c1: int
+    way_2_c1: str
+    way_2_pc_c1: int
+    way_3_c1: str
+    way_3_pc_c1: int   
+    id_entry_c2: int
+    country_2: str
+    co2_c2: int     
+    way_1_c2: str
+    way_1_pc_c2: int    
+    way_2_c2: str
+    way_2_pc_c2: int
+    way_3_c2: str
+    way_3_pc_c2: int
+    way_3_c2: str
+    way_3_pc_c2: int                        
+
 sqlite_file_name = "database.db"
 sqlite_url = f"sqlite:///{sqlite_file_name}"
 engine = create_engine(sqlite_url, echo=True)
@@ -52,21 +77,3 @@ def get_session():
 
 def create_db():
     SQLModel.metadata.create_all(engine)
-
-def add_data():
-    test = Entry(division='Europe'
-                               , country='test'
-                               , ts=10101
-                               , matchup=5
-                               , co2 = 100
-                               , way_1 = 'djsk'
-                               , way_1_pc = 0.35
-                               , way_2 = "djd"
-                               , way_2_pc = 0.35
-                               , way_3 = "lkjdsq"
-                               , way_3_pc = 0.45
-                               )
-    engine = create_engine(sqlite_url, echo=True)
-    session = Session(engine)
-    session.add(test)
-    session.commit()
