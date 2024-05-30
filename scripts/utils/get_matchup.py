@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 wdb = getcwd()
-zones_df = pd.read_csv(f"{wdb}/utils/zones.csv")
-probabilities_df = pd.read_csv(f"{wdb}/utils/probabilities.csv")
+zones_df = pd.read_csv(f"{wdb}/scripts/utils/zones.csv")
+probabilities_df = pd.read_csv(f"{wdb}/scripts/utils/probabilities.csv")
 
 
 def get_matchup(division):

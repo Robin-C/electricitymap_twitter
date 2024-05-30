@@ -17,10 +17,6 @@ TWEETER_ACCESS_TOKEN=xyz
 TWEETER_ACCESS_TOKEN_SECRET=xyz
 ```
 
-If you do not have credentials, dm me on [twitter](https://twitter.com/adz122) and I'll help you get set up.
-
-Then you `docker-compose up` and there you go, 3 tweets will be out, 1 per division.
-
 # Steps
 
 3 steps, all of them run synchronously for each division (see below for an explanation of whats a division).

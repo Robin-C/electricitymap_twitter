@@ -50,7 +50,7 @@ class Comparaison:
 
 if __name__ == "__main__":
     wdb = getcwd()
-    df = pd.read_csv(f"{wdb}/utils/zones.csv")
+    df = pd.read_csv(f"{wdb}/scripts/utils/zones.csv")
     divisions = pd.unique(df['division'])
     for division in divisions:
         comparaison = Comparaison(division)
