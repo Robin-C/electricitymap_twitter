@@ -2,7 +2,6 @@ import pandas as pd
 import os
 from os import getcwd
 import requests
-import time
 from utils.get_matchup import get_matchup
 from utils.get_data import get_data
 from utils.send_tweet import send_tweet
