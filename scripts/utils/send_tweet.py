@@ -100,7 +100,7 @@ using {data_tweet['top3'][1][0][2]}% {data_tweet['top3'][1][0][0].capitalize()},
 {data_tweet['top3'][1][1][2]}% {data_tweet['top3'][1][1][0].capitalize()} \
 and {data_tweet['top3'][1][2][2]}% {data_tweet['top3'][1][2][0].capitalize()}.
 
-Provided by @ElectricityMaps, data is about live consumption as of {timestamp_berlin} Berlin's time.
+Provided by @ElectricityMaps, data is about live consumption for the past hour as of {timestamp_berlin} Berlin's time.
 """
     r = client.create_tweet(text=text)
     r = r._asdict()
