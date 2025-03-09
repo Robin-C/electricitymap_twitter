@@ -1,9 +1,9 @@
 name: send tweets
 
-on:
-  schedule:
-    - cron: '15 */6 * * *'
-  workflow_dispatch:
+#on:
+#  schedule:
+#    - cron: '15 */6 * * *'
+#  workflow_dispatch:
 
 jobs:
   run:
